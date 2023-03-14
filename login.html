@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+      /* Write all necessery css here  */
+     #container{
+      width: 50%;
+      margin: 100px auto;
+      border: 2px solid red;
+      text-align: center;
+      font-size:xx-large;
+      /* display: flex; */
+     }
+     input{
+      box-sizing: border-box;
+      /* justify-content: space-between; */
+      border: 2px solid blueviolet;
+      width: 80%;
+      margin:18px ;
+      font-size: xx-large;
+      /* align-content: center; */
+      padding: 18px 18px;
+      border-radius: 10px;
+     }
+
+     input[type="submit"]{
+      background-color: red;
+      color: white;
+      padding: 18px 18px;
+     }
+     input[type="submit"]:hover{
+      background-color: rgb(113, 3, 3);
+     }
+      
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    
+  </div>
+  <div id="container">
+   <div id="text">
+    <h1>Login</h1>
+    <p>Please enter your e-mail and password:</p>
+   </div>
+   <div id="main">
+    <form >
+      <input type="email" placeholder="E-mail" id="email">
+      <input type="password" placeholder="Password" id="password" >
+      <input type="submit" value="LOGIN">
+    </form>
+   </div>
+   <p>New customer?  <span> <a href="./signup.html">Create an account</a></span> </p>
+   <a href="">Forgot Password ?</a>
+
+
+  </div>
+</body>
+<script>
+
+  
+
+ 
+document.querySelector("form").addEventListener("submit",login);
+   var arr = JSON.parse(localStorage.getItem("signup-data"))||[];
+  function login(){
+    
+    event.preventDefault();
+    console.log(arr)
+  var eml = document.getElementById("email").value
+ var pss = document.getElementById("password").value
+  var flag =0;
+ arr.map(function(elem){
+  if(elem.email== eml && elem.password == pss){
+    flag =1;
+  }
+ })
+ if(flag==1){
+  // document.getElementById("heading").textContent="Sign in Successful";
+  alert("Sign in Successful")
+ }else{
+  alert("Wrong Credentials")
+ }
+
+}
+</script>
+
+</html>
