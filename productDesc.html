@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="innerc">
+            <div class="prodDiv">
+                <div class="allimages">
+             <div class="smallphoto">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_600x.png?v=1668756103" onclick="choose(this)">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/FeatureImagesAD1314XCharge_700x.jpg?v=1674156020" onclick="choose(this)">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ad131FIAD131TypeC_700x.jpg?v=1674156020" onclick="choose(this)">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/FeatureImagesAD131VA_700x.jpg?v=1674156020" onclick="choose(this)">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/FeatureImagesAD131BV5.0_700x.jpg?v=1674156020" onclick="choose(this)">
+            </div>
+            <div class="mainImage">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ad131FIAD131TypeC_700x.jpg?v=1674156020" id="imagebox">
+            </div>
+            </div>
+        </div>
+
+            <!-- 2nd -->
+            <div class="textBox">
+              <div class="boxContent">
+                <p class="BrandDetails">Brand: Boat</p>
+                <h2>Boat Airpods 131</h2>
+                <p>Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers 
+                    and IWP Technology, 650mah C type Charging Case</p>
+                <div class="review">
+                  <span>(4.6)</span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <!-- pricepart -->
+                <div class="price-box">
+                    <p class="price">&#8377;1,999</p>
+                    <strike>&#8377;3,999</strike>
+                </div>
+                <p><select name="size" >
+                    <option value="select color">select color</option>
+                    <option value="select color">black</option>
+                    <option value="select color">blue</option>
+                    <option value="select color">green</option>
+                    <option value="select color">purple</option>
+                </select></p>
+                <!-- selectend -->
+                <p>Quantity <input type="text" placeholder=""></p>
+                <button>add to cart
+                    <span class="fa fa-shopping-cart"></span>
+                </button>
+                <button>
+                    buy now
+                    <span class="fa fa-shopping-cart"></span>
+                </button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function choose(smallphoto){
+            let picSelect=document.getElementById("imagebox");
+            picSelect.src=smallphoto.src;
+        }
+    </script>
+</body>
+</html>
