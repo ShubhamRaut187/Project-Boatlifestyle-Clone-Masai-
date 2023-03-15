@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+      #nav
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+
+        .one {
+            display: flex;
+            gap: 25px;
+             justify-content: center;
+        } 
+        .image {
+            width: 20%;
+            /* border: 1px solid black; */
+            padding: 15px;
+        }
+        .first{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+             gap: 90px;
+        }
+        .first>div:last-child{
+            width: 85%;
+            padding: 10px;
+            /* border: 1px solid black; */
+
+        }
+        .image>img {
+            width: 50%;
+             padding: 10px;
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+              width: 50%;
+        }
+        .login>img{
+             width: 30%;
+             padding: 5px;
+        }
+        .searchBar{
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            /* border: 1px solid black; */
+        }
+        .login{
+            text-align: right;
+            width: 20%;
+        }
+        .searchBar>input{
+            border-radius: 10px;
+            height: 40px;
+            width: 70%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="first">
+
+
+            <div class="image">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.2pWluCnobYZhbRIuyIWtHAHaD4&pid=Api&P=0" alt="boat">
+            </div>
+            <div class="one">
+                <p><b>CATEGORIES</b></p>
+                <p><b>DAILY DEALS</b></p>
+                <p><b>GIFT WITH BOAT</b></p>
+                <p><b>MORE</b></p>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="searchBar">
+                <input type="search" placeholder="Type to search">
+                <a href="#"><i></i></a>
+            </div>
+            <div class="login">
+                <img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" alt="login">
+                <img src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" alt="cart">
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
