@@ -182,6 +182,117 @@ var productlistval = [{
     Category:"Wireless-Speakers",
     Status:"In-Stock",
 },
+//Smart Watch-2
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/WaveCall.197_d6cce9fa-8242-443a-b1e1-0fefdd1751c8_300x.png?v=1678190676",
+    Name:"TRebel Wave Call",
+    Price:1799,
+    MRP:7990,
+    Percent_off:"77% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"TRebel Wave Call",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_f30681d9-fddb-4997-bfcb-503fcc258a5c_600x.png?v=1646392933",
+    Name:"Matrix",
+    Price:1799,
+    MRP:11990,
+    Percent_off:"85% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"1.65 (4.18 cm) colour AMOLED Display, Fitness Tracking, 100+ Cloud Watch Faces",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Wavebeatcall1.2_700x.png?v=1674561165",
+    Name:"Wave Beat Call",
+    Price:1799,
+    MRP:7990,
+    Percent_off:"79% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Bluetooth Calling Smart Watch with 1.69 (4.29 cm) HD Display, 600+ Cloud Watch faces, Live",
+    Category:"Smart Watch",
+    Status:"Out-Stock",
+},
+//Airpods-2
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_grey_8202f335-95e8-4bc4-9889-ea9beb8292e4_300x.png?v=1664103052",
+    Name:"Airdopes 183 ",
+    Price:1599,
+    MRP:2990,
+    Percent_off:"47% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Bluetooth Earbuds with 10mm Driver, Upto 90 min Playback in 10 min Charge, ASAP Charge Technology, BEAST™ mode",
+    Category:"Wireless-Earbuds",
+    Status:"Out-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-pink_600x.png?v=1678773275",
+    Name:"Airdopes 121 v2",
+    Price:1199,
+    MRP:2999,
+    Percent_off:"60% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"In-Ear Earbuds v2 with 8mm driver, LED Case Battery Indicator, 380mAh Pocket Friendly Charging",
+    Category:"Wireless-Earbuds",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_c5f9fe7c-c012-4d93-ba0c-b25267c0560d_300x.png?v=1647426797",
+    Name:"Airdopes 411 ANC",
+    Price:1999,
+    MRP:4990,
+    Percent_off:"60% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Noise-Cancelling Earbuds with 10mm Drivers, ASAPTM Charge Technology, Up to 25dB ANC, ENx™ Technology, 17.5 Hours Playback",
+    Category:"Wireless-Earbuds",
+    Status:"In-Stock",
+},
+//Neckbands-2
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_e0d541c5-72de-4f54-a19b-1c324082742a_600x.png?v=1654195093",
+    Name:"Rockerz 260",
+    Price:1299,
+    MRP:2499,
+    Percent_off:"48% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Bluetooth Earphone with Insta Wake & Pair, Quad Mics with ENx Technology & Asap Charge",
+    Category:"NeckBands",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245pro3_700x.png?v=1663584969",
+    Name:"Rockerz 103 Pro",
+    Price:899,
+    MRP:2490,
+    Percent_off:"64% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earphones with 10 mm Drivers, Single Press Voice Assistant, Up To 20 hrs Uninterrupted, ENx™ Technology",
+    Category:"NeckBands",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245pro4_700x.png?v=1663584969",
+    Name:"Rockerz 245 Pro",
+    Price:1299,
+    MRP:2499,
+    Percent_off:"48% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earphones with 10 min ASAP™ Fast Charge, 20 Hours of nonstop playback & ENx™ Technology",
+    Category:"NeckBands",
+    Status:"Out-Stock",
+},
 ]
 displayproducts(productlistval);
 function displayproducts(list){
@@ -288,11 +399,19 @@ function  notifyme(elem){
 //Filter Function
 function filterproducts(){
     var selected = document.getElementById("showfilters").value; 
+    var h1 = document.querySelector("h1");
+    if(selected === ""){
+        h1.textContent = "Our Products";
+    }
+    else{
+        h1.textContent = selected;
+    }
     var filtered = productlistval.filter(function(elem){
         if(selected === ""){
             return true;
         }
         else{
+            
             return elem.Category === selected;
         }
     })
