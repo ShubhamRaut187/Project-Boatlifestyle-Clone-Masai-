@@ -6,390 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar</title>
-    <style>
-        #nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        }
+    <link rel="stylesheet" href="home.css">
 
-        .one {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-        }
-
-        .image {
-            width: 20%;
-            /* border: 1px solid black; */
-            padding: 15px;
-        }
-
-        .first {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px;
-            gap: 90px;
-        }
-
-        .first>div:last-child {
-            width: 85%;
-            padding: 10px;
-            /* border: 1px solid black; */
-
-        }
-
-        .image>img {
-            width: 50%;
-            padding: 10px;
-        }
-
-        .logo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 50%;
-        }
-
-        .login>img {
-            width: 30%;
-            padding: 5px;
-        }
-
-        .searchBar {
-            width: 100%;
-            display: flex;
-            justify-content: right;
-            /* border: 1px solid black; */
-        }
-
-        .login {
-            text-align: right;
-            width: 20%;
-        }
-
-        .searchBar>input {
-            border-radius: 10px;
-            height: 40px;
-            width: 70%;
-        }
-
-        #third {
-            display: flex;
-            justify-content: space-between;
-            /* gap: 10px; */
-        }
-
-        .a {
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px ;
-        }
-
-        #four {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 15px;
-            
-        }
-        
-        .fo1 {
-            /* border: 1px solid black; */
-            display: flex;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            border-radius: 5px;
-            background-color: rgb(237, 230, 230);
-            padding: 5px;
-        }
-        .fo1>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo1>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo1>div:last-child {
-            width: 50%;
-        }
-        .fo2 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }   
-        .fo2>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo2>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo2>div:last-child {
-            width: 50%;
-        }
-        .fo3 {
-            
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo3>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo3>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo3>div:last-child {
-            width: 50%;
-        }
-        .fo4 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo4>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo4>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo4>div:last-child {
-            width: 50%;
-        }
-        .fo5 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo5>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo5>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo5>div:last-child {
-            width: 50%;
-        }
-        .fo6 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo6>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo6>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo6>div:last-child {
-            width: 50%;
-        }
-        .fo7 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo7>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo7>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo7>div:last-child {
-            width: 50%;
-        }
-        .fo8 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo8>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo8>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo8>div:last-child {
-            width: 50%;
-        }
-        .fo9 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo9>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo9>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo9>div:last-child {
-            width: 50%;
-        }
-        .fo10 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo10>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo10>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo10>div:last-child {
-            width: 50%;
-        }
-        .fo11 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo11>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo11>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo11>div:last-child {
-            width: 50%;
-        }
-        .fo12 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo12>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo12>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo12>div:last-child {
-            width: 50%;
-        }
-        .fo13 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo13>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo13>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo13>div:last-child {
-            width: 50%;
-        }
-        .fo14 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo14>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo14>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo14>div:last-child {
-            width: 50%;
-        }
-        .fo15{
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo15>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo15>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo15>div:last-child {
-            width: 50%;
-        }
-        .fo16 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo16>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo16>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo16>div:last-child {
-            width: 50%;
-        }
-        .fo17 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo17>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo17>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo17>div:last-child {
-            width: 50%;
-        }
-        .fo18 {
-            /* border: 1px solid black; */
-            display: flex;
-            background-color:  whitesmoke;
-        }
-        .fo18>div>img {
-            padding: 10px;
-            width: 80%;
-        }
-        .fo18>div:first-child {
-            width: 50%;
-            line-height: 10px;
-        }
-        .fo18>div:last-child {
-            width: 50%;
-        }
-
-
-        #five{
-            display: flex;
-            gap: 15px;
-        }
-    </style>
 </head>
 
 <body>
@@ -509,151 +127,407 @@
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_eaf60560-3afb-4dda-b4c0-598078f7ce72_300x.png?v=1647767874"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_eaf60560-3afb-4dda-b4c0-598078f7ce72_300x.png?v=1647767874"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo4">
+        </div>
+        <div class="fo4">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo5">
+        </div>
+        <div class="fo5">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_250_black_600x.png?v=1673001721"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_250_black_600x.png?v=1673001721"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo6">
+        </div>
+        <div class="fo6">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo7">
+        </div>
+        <div class="fo7">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2176f9c3-7b8b-4c29-b6e9-668e45aa6c97_47337d1c-5c17-44d6-b243-f677d8b7586f_800x.png?v=1678441998"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2176f9c3-7b8b-4c29-b6e9-668e45aa6c97_47337d1c-5c17-44d6-b243-f677d8b7586f_800x.png?v=1678441998"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo8">
+        </div>
+        <div class="fo8">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_03786e84-2bf4-4d79-acc7-adaf74b052f0_600x.png?v=1647671737"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_03786e84-2bf4-4d79-acc7-adaf74b052f0_600x.png?v=1647671737"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo9">
+        </div>
+        <div class="fo9">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_f3aa2756-01f3-4e39-80bc-7b4f6551c7aa_600x.png?v=1625748159"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_f3aa2756-01f3-4e39-80bc-7b4f6551c7aa_600x.png?v=1625748159"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo10">
+        </div>
+        <div class="fo10">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/resize-2_600x.png?v=1655187482"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/resize-2_600x.png?v=1655187482"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo11">
+        </div>
+        <div class="fo11">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/d67adff0-f513-4b4b-abdc-226ee39287a6_600x.png?v=1625045409"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/d67adff0-f513-4b4b-abdc-226ee39287a6_600x.png?v=1625045409"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo12">
+        </div>
+        <div class="fo12">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-ltg-500_600x.png?v=1613736579"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-ltg-500_600x.png?v=1613736579"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo13">
+        </div>
+        <div class="fo13">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_250_black_600x.png?v=1673001721"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_250_black_600x.png?v=1673001721"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo14">
+        </div>
+        <div class="fo14">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/car-charger-main-image_1e0addf3-ca17-46c3-94ac-c7b60b752dea_600x.png?v=1663154266"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/car-charger-main-image_1e0addf3-ca17-46c3-94ac-c7b60b752dea_600x.png?v=1663154266"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo15">
+        </div>
+        <div class="fo15">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/77081a14-84ab-4a56-9977-9c902c341e5a_900x.png?v=1625045422"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/77081a14-84ab-4a56-9977-9c902c341e5a_900x.png?v=1625045422"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo16">
+        </div>
+        <div class="fo16">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/141white_600x.png?v=1678862933"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/141white_600x.png?v=1678862933"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo17">
+        </div>
+        <div class="fo17">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/DisneyStormPackaging3.1591_600x.png?v=1640110480"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/DisneyStormPackaging3.1591_600x.png?v=1640110480"
+                    alt="sdf">
             </div>
-         </div>
-         <div class="fo18">
+        </div>
+        <div class="fo18">
             <p><b>Smart</b></p>
             <p><b>Watches</b></p>
             <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/logo123_171ada23-0c67-477b-84d1-21fe1bad3909_small.png?v=1674022741"
-                alt="sdf">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/logo123_171ada23-0c67-477b-84d1-21fe1bad3909_small.png?v=1674022741"
+                    alt="sdf">
             </div>
-         </div>
+        </div>
 
     </div>
 
     <h2>Best Of boAt</h2>
 
     <div id="five">
-        <div> 
-           <p style="background-color: red;"><b>Best Sellers</b></p>
+        <div class="fa">
+            <p><b>Best Sellers</b></p>
         </div>
-        <div>
+        <div class="fb">
             <p><b>Top Earbuds</b></p>
-        </div>          
-
-       <div>
-        <p><b>Trending Wiresless</b></p>
-       </div>
-       
-      <div>
-        <p><b>Trending ANC</b></p>
-      </div>
+        </div>
+        <div class="fb">
+            <p><b>Trending Wiresless</b></p>
+        </div>
+        <div class="fb">
+            <p><b>Trending ANC</b></p>
+        </div>
     </div>
+
+
+
+
+    <div id="third">
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image-1_300x.png?v=1661272676"
+                alt="a">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/115-Red_1_300x.png?v=1675859737"
+                alt="b">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow;">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image-2_300x.png?v=1655534170"
+                alt="c">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/MG_300x.png?v=1657775492" alt="d">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/MG_300x.png?v=1657775492" alt="e">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow;  ">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Smartwatches</h2>
+
+    <div id="five">
+        <div class="fa">
+            <p><b>BT Calling</b></p>
+        </div>
+        <div class="fb">
+            <p><b>AMOLED</b></p>
+        </div>
+        <div class="fb">
+            <p><b>Fashion</b></p>
+        </div>
+        <div class="fb">
+            <p><b>Fitness</b></p>
+        </div>
+    </div>
+
+
+    <div id="third">
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-image-1_300x.png?v=1661272676"
+                alt="a">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/grey_3cba165a-c357-4664-8015-2f8cbabb5a55_300x.png?v=1670787230"
+                alt="b">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow;">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/blue_d8db0011-02f7-43d6-9fe7-7a71a9ed86d2_300x.png?v=1654312290"
+                alt="c">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/cb_e3d84ed1-bf9f-4631-aeb0-7392bfc9baee_300x.png?v=1669707141"
+                alt="d">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/purple_3d77eebb-c841-400c-b5d1-2c21ce8fca24_300x.png?v=1673616524"
+                alt="e">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow;  ">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="six">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/netfix_ui_png_desktop_2_2000x.png?v=1671621660"
+            alt="ak">
+    </div>
+
+    <h2>Catch'em All</h2>
+
+    <div id="five">
+        <div class="fa">
+            <p><b>New Launches</b></p>
+        </div>
+        <div class="fb">
+            <p><b>Marvel products</b></p>
+        </div>
+        <div class="fb">
+            <p><b>DC products</b></p>
+        </div>
+    </div>
+
+
+    <div id="third">
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ABMystiq-FI02_300x.png?v=1678867486"
+                alt="a">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/grey_3cba165a-c357-4664-8015-2f8cbabb5a55_300x.png?v=1670787230"
+                alt="b">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow;">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/blue_d8db0011-02f7-43d6-9fe7-7a71a9ed86d2_300x.png?v=1654312290"
+                alt="c">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD458FI07copy_2_300x.png?v=1678429824"
+                alt="d">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow; ">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="a">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_af44472c-0a30-43dd-aad0-bbd2b90eb93e_300x.png?v=1678221785"
+                alt="e">
+            <div>
+                <p><b>Storm Call</b></p>
+                <p>₹ 1,599</p>
+                <p>4.7 | 23 reviews</p>
+                <p>₹15 Extra Discount on UPI</p>
+                <button style="width: 200px; height: 30px; background-color: yellow;  ">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="heads">
+        <div class="head">
+            <h2>bo</h2>
+            <h2 style="color: red;">A</h2>
+            <h2>t</h2>
+            <h2>blogs</h2>
+        </div>
+    </div>   
+
+    
+        <div id="eight">
+
+            <div class="e1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Aman_Blog_600x.jpg?v=1673507967" alt="sf">
+            </div>
+            <div class="e1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/blog_2_600x.webp?v=1663587325" alt="sl">
+            </div>
+            <div class="e1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/blog_3_600x.webp?v=1663587423" alt="kvv">
+            </div>
+            <div class="e1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/smartwatch_blog_600x.png?v=1678884962" alt="vxk">
+            </div>
+
+        </div>
+    
 </body>
 
 </html>
