@@ -416,11 +416,17 @@
     gap: 35px; 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .e1>img{
     width: 100%;
-    height: 100%;
-    /* border: 1px solid black; */
+    height: 60%;
+    border: 1px solid black;
     border-radius: 10px;
     /* background-color: black; */
+    /* padding: 15px 0px 15px 0px; */
+}
+.e1>p{
+    font-size: 17px;
 }
