@@ -270,7 +270,7 @@ var productlistval = [{
     Status:"In-Stock",
 },
 {
-    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245pro3_700x.png?v=1663584969",
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Packaging1.3682_700x.png?v=1675751805",
     Name:"Rockerz 103 Pro",
     Price:899,
     MRP:2490,
@@ -282,19 +282,150 @@ var productlistval = [{
     Status:"In-Stock",
 },
 {
-    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245pro4_700x.png?v=1663584969",
-    Name:"Rockerz 245 Pro",
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-255r-red_600x.png?v=1613731612",
+    Name:"Rockerz 255R",
     Price:1299,
-    MRP:2499,
-    Percent_off:"48% off",
+    MRP:2990,
+    Percent_off:"57% off",
     Rating:4.8,
     Discount:"15 Extra Discount on UPI",
-    Discription:"Wireless Earphones with 10 min ASAP™ Fast Charge, 20 Hours of nonstop playback & ENx™ Technology",
+    Discription:"boAt Rockerz 255R",
     Category:"NeckBands",
     Status:"Out-Stock",
 },
+//Wireless Headphones2
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e5881832-36f8-4c1c-a767-10f2c2a55a02_600x.png?v=1625046573",
+    Name:"Rockerz 370",
+    Price:749,
+    MRP:2499,
+    Percent_off:"70% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Headphone with 40mm Dynamic Driver,Bluetooth & AUX Connectivity, Upto 8 hrs Music",
+    Category:"Wireless-HeadPhones",
+    Status:"Out-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/013a08f8-85c4-49cf-914a-aa6586249b09_600x.png?v=1624882639",
+    Name:"TRebel Rockerz 450",
+    Price:1499,
+    MRP:3990,
+    Percent_off:"62% off",
+    Rating:5.0,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Bluetooth Headphone with 40mm Driver, 08 Hours Non-Stop Playback, Bluetooth V5.0",
+    Category:"Wireless-HeadPhones",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-410-black_600x.png?v=1613457276",
+    Name:"Rockerz 410",
+    Price:999,
+    MRP:2990,
+    Percent_off:"67% off",
+    Rating:5.0,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"boAt Rockerz 410",
+    Category:"Wireless-HeadPhones",
+    Status:"In-Stock",
+},
+//Wireless Speakers
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/resize-2_600x.png?v=1655187482",
+    Name:"Stone 135",
+    Price:899,
+    MRP:1990,
+    Percent_off:"55% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Portable Bluetooth Speaker with up to 11 HRS Playback & 5W RMS Immersive Sound, IPX 4 Water Resistant",
+    Category:"Wireless-Speakers",
+    Status:"Out-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_8549ad38-acec-45d6-bba4-8b202a9bfdc1_600x.png?v=1673001484",
+    Name:"Stone 500",
+    Price:1999,
+    MRP:299,
+    Percent_off:"33% off",
+    Rating:5.0,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Portable Bluetooth Speaker with 10W RMS Stereo Sound, RGB Lights, Bluetooth v5.0, AUX, USB & FM mode",
+    Category:"Wireless-Speakers",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/stone-1010-black_600x.png?v=1673002262",
+    Name:"Stone 1010",
+    Price:3199,
+    MRP:6990,
+    Percent_off:"54% off",
+    Rating:5.0,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Party Speaker with 14W Output, 10 Hours of Playtime, IPX5 Water Resistant, 3000mah Battery",
+    Category:"Wireless-Speakers",
+    Status:"In-Stock",
+},
+//Smart Watch-3
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/WaveCall.197_d6cce9fa-8242-443a-b1e1-0fefdd1751c8_300x.png?v=1678190676",
+    Name:"TRebel Wave Call",
+    Price:1799,
+    MRP:7990,
+    Percent_off:"77% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"TRebel Wave Call",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_f30681d9-fddb-4997-bfcb-503fcc258a5c_600x.png?v=1646392933",
+    Name:"Matrix",
+    Price:1799,
+    MRP:11990,
+    Percent_off:"85% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"1.65 (4.18 cm) colour AMOLED Display, Fitness Tracking, 100+ Cloud Watch Faces",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Wavebeatcall1.2_700x.png?v=1674561165",
+    Name:"Wave Beat Call",
+    Price:1799,
+    MRP:7990,
+    Percent_off:"79% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Bluetooth Calling Smart Watch with 1.69 (4.29 cm) HD Display, 600+ Cloud Watch faces, Live",
+    Category:"Smart Watch",
+    Status:"Out-Stock",
+},
 ]
-displayproducts(productlistval);
+// displayproducts(productlistval);
+var selectedcategory2 = localStorage.getItem("selected_category");
+console.log(selectedcategory2);
+if(selectedcategory2 === "Smart Watch"){
+    homepagecategory(selectedcategory2);
+}
+else if(selectedcategory2 === "Wireless-Earbuds"){
+    homepagecategory(selectedcategory2);
+}
+else if(selectedcategory2 === "NeckBands"){
+    homepagecategory(selectedcategory2);
+}
+else if(selectedcategory2 === "Wireless-HeadPhones"){
+    homepagecategory(selectedcategory2);
+}
+else if(selectedcategory2 === "Wireless-Speakers"){
+    homepagecategory(selectedcategory2);
+}
+else{
+    displayproducts(productlistval);
+}
 function displayproducts(list){
     document.querySelector("#parent").textContent="";
     list.map(function(elem,index){
@@ -363,7 +494,7 @@ function displayproducts(list){
             btn = document.createElement("div");
             btn.setAttribute("class","nmdiv");
             var nmbtn = document.createElement("a");
-            nmbtn.setAttribute("href","hello.html");
+            nmbtn.setAttribute("href","notify.html");
             nmbtn.setAttribute("class","nmanchor");
             nmbtn.textContent = "NOTIFY ME";
             nmbtn.addEventListener("click",function(){
@@ -392,19 +523,27 @@ function addtocart(elem){
     cartitems.push(elem);
     localStorage.setItem("cart_list",JSON.stringify(cartitems));
 }
-//Notify Me 
+//Notify Me
+var notifyproduct = JSON.parse(localStorage.getItem("notify_list")) || []; 
 function  notifyme(elem){
     alert("Notify Me");
+    notifyproduct.push(elem);
+    localStorage.setItem("notify_list",JSON.stringify(notifyproduct));
 }
 //Filter Function
 function filterproducts(){
     var selected = document.getElementById("showfilters").value; 
     var h1 = document.querySelector("h1");
+    
+    
     if(selected === ""){
         h1.textContent = "Our Products";
     }
     else{
         h1.textContent = selected;
+    }
+    if(selected === "Out-Stock"){
+        h1.textContent ="Oops! These Products Are Out Of Stock"
     }
     var filtered = productlistval.filter(function(elem){
         if(selected === ""){
@@ -412,8 +551,72 @@ function filterproducts(){
         }
         else{
             
-            return elem.Category === selected;
+            if(selected === "Out-Stock"){
+                return elem.Status === selected;
+            }
+            else{
+                return elem.Category === selected;
+            }
         }
     })
     displayproducts(filtered);
+}
+//Sort
+function sortproducts(){
+    var selectedsort = document.getElementById("showsort").value;
+    if(selectedsort === "Ascending"){
+        productlistval.sort(function(a,b){
+            if(a.Name > b.Name){
+                return 1;
+              }
+              if(a.Name < b.Name){
+                return -1;
+              }
+              return 0;
+        })
+    }
+    else if(selectedsort === "Decending"){
+        productlistval.sort(function(a,b){
+            if(a.Name > b.Name){
+                return -1;
+              }
+              if(a.Name < b.Name){
+                return 1;
+              }
+              return 0;
+        })
+    }
+    else if(selectedsort === "hightolow"){
+        productlistval.sort(function(a,b){
+            if(a.Price > b.Price){
+                return -1;
+              }
+              if(a.Price < b.Price){
+                return 1;
+              }
+              return 0;
+        })
+    }
+    else{
+        productlistval.sort(function(a,b){
+            if(a.Price > b.Price){
+                return 1;
+              }
+              if(a.Price < b.Price){
+                return -1;
+              }
+              return 0;
+        })
+    }
+    displayproducts(productlistval);
+}
+
+//Homepage Selected Category Filter Function;
+function homepagecategory(str){
+    var filtered2 = productlistval.filter(function(elem){
+        return elem.Category === str;
+    })
+    var h1 = document.querySelector("h1");
+    h1.textContent = selectedcategory2;
+    displayproducts(filtered2);
 }

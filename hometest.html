@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="products.html" id="smartwatch">Smart Watches</a><br>
+    <a href="products.html" id="airpods">Airpods</a><br>
+    <a href="products.html" id="neckbands">NeckBands</a><br>
+    <a href="products.html" id="wirelessheadphones">Wireless HeadPhones</a><br>
+    <a href="products.html" id="wirelessspeakers">Wireless Speakers</a><br>
+</body>
+</html>
+<script>
+    document.querySelector("#smartwatch").addEventListener("click",gotosmartwatch);
+    document.querySelector("#airpods").addEventListener("click",gotoairpods);
+    document.querySelector("#neckbands").addEventListener("click",gotoneckbands);
+    document.querySelector("#wirelessheadphones").addEventListener("click",gotowirelessheadphones);
+    document.querySelector("#wirelessspeakers").addEventListener("click",gotowirelessspeakers);
+    // SmartWatch
+    function gotosmartwatch(){
+        var selectedcategory = "Smart Watch";
+        localStorage.setItem("selected_category","Smart Watch");
+    }
+
+    // Airpods
+    function gotoairpods(){
+        var selectedcategory = "Wireless-Earbuds";
+        localStorage.setItem("selected_category","Wireless-Earbuds");
+    }
+
+    //NeckBands
+    function gotoneckbands(){
+        var selectedcategory = "NeckBands";
+        localStorage.setItem("selected_category","NeckBands");
+    }
+
+    //WirelessHeadphones
+    function gotowirelessheadphones(){
+        var selectedcategory = "Wireless-HeadPhones";
+        localStorage.setItem("selected_category","Wireless-HeadPhones");
+    }
+
+    //Wireless-Speakers
+    function gotowirelessspeakers(){
+        var selectedcategory = "Wireless-Speakers";
+        localStorage.setItem("selected_category","Wireless-Speakers");
+    }
+    
+</script>
