@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat-Products</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div id="title">
+        <h1>Our Products</h1>
+    </div>
+    <div id="operations">
+        <select id="showfilters" onchange=filterproducts()>
+            <option value="">Show Filters</option>
+            <option value="Smart Watch">Watch</option>
+            <option value="Wireless-Earbuds">Wireless-Earbuds</option>
+            <option value="NeckBands">NeckBands</option>
+            <option value="Wireless-HeadPhones">Wireless-HeadPhones</option>
+            <option value="Wireless-Speakers">Wireless-Speakers</option>
+        </select>
+        <select id="showsort" onchange="sortproducts()">
+            <option value="">Sort by</option>
+            <option value="Ascending">Alphabetically A-Z</option>
+            <option value="Decending">Alphabetically Z-A</option>
+            <option value="hightolow">Price, High to Low</option>
+            <option value="lowtohigh">Price, Low to High</option>
+        </select>
+    </div>
+    <div id="parent">
+        <!-- <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Beige_large.png?v=1660370349" alt="pro1">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <div>
+                    <h4>
+                    <h4>
+                    <h4>
+                    <h4>        
+                </div>
+                <hr>
+                <div>
+                    <div>
+                    <p class="product_rating">4.6</p>
+                    </div>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-5_large.png?v=1660243800" alt="pro2">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <h3 class="price">2099</h3>
+                <hr>
+                <p class="product_rating">4.6</p>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/blue_58bd5e28-de95-4f31-909d-6bce484bdbd9_large.png?v=1660243800" alt="pro3">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <h3 class="price">2099</h3>
+                <hr>
+                <p class="product_rating">4.6</p>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div> -->
+    </div>
+    
+</body>
+</html>
+<script src="products.js"></script>
