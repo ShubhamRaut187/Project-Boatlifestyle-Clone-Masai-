@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+  <style>
+    body{
+      /* background-color: grey; */
+        /* background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_01_95d6b90e-ab41-402c-bc3d-dfd5545d98a4.jpg?v=1639989127"); */
+        /* background-image: ; */
+    margin: 0px;
+    font-family: Lato;
+}
+
+#main {
+    display: grid;
+            width: 40%;
+            /* height: 1000px; */
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+        }
+#main > div{
+    
+        width: 80%;
+        /* height: 400px; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #main p {
+            font-weight: 400;
+            font-size: 18px;
+            margin: 0px;
+            line-height: 22px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            color: #5c5c5c;
+        }
+    #main button{
+        margin: 20px;
+    }
+    #main input {
+            border-radius: 15px;
+            border: none;
+            background-color: #f3f2ff;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+        }
+        #main button {
+            border: 0;
+            background-color: #FF0000;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        #main button:hover {
+            background-color: #800000;
+        }
+        #main > button:first-of-type{ 
+            width: 150px;
+            margin: 5px;
+            background-color: #5c5c5c;
+            color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        } 
+
+  </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <p>Enter Your Name</p>
+            <input type="text" id="name" placeholder="Enter your name">
+            <p>Enter Your Address</p>
+            <input type="text" id="add" placeholder="Enter your address">
+            <p>Enter Your Mobile number</p>
+            <input type="number" id="mnum" placeholder="Enter your mobile number">
+            <div>
+                <button onclick="tellOTP()">Get OTP</button>
+                <input type="number" id="OTP">
+            </div>
+        </div>
+        <div>     <p>Enter Your Credit Card Number</p>
+            <input maxlength="3" type="number" id="credit" placeholder="Credit Card Num">
+            <p>Security Code</p>
+            <input type="number" id="cvv" placeholder="Enter CVV">
+            <p>Do you have any discount coupons?</p>
+            <input type="text" id="dcode" placeholder="Discount Coupon">
+            <button  onclick="check()">
+               </a> Purchase</button> -->
+               <div id="otp"></div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/4d1e521af4.js" crossorigin="anonymous"></script>
+<script>
+    function showMain(){
+        window.location.href = "index.html";
+    }
+    function check(){
+        var name = document.getElementById("name").value
+        var add = document.getElementById("add").value
+        var mnum = document.getElementById("mnum").value
+        var otp = document.getElementById("OTP").value
+        var ccn = document.getElementById("credit").value
+        var cvv = document.getElementById("cvv").value
+        var dcode = document.getElementById("dcode").value
+
+        if(name==""||add==""||mnum==""||otp==""||ccn==""||cvv==""){
+            alert("Please enter correct details")
+        }else if(otp!="1234"){
+            alert("wrong OTP")
+        }else{
+            alert("Thank you for the purchase :)")
+            // var anc = document.createElement("a")
+           
+    document.getElementById("main").textContent="thankyou"
+    window.open("paymentsucc.html")
+        }
+        
+    }
+
+    function tellOTP(){
+        alert("The OTP is 1234")
+    }
+</script>

@@ -1,0 +1,694 @@
+#parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.one {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    height: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.image {
+    width: 20%;
+    /* border: 1px solid black; */
+    padding: 15px;
+}
+/* 
+.first {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 90px;
+}
+
+.first>div:last-child {
+    width: 85%;
+    padding: 10px;
+    /* border: 1px solid black; */
+
+/* } */
+
+/* .image>img {
+    width: 50%;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.login>img {
+    width: 30%;
+    padding: 5px;
+}
+
+.searchBar {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    /* border: 1px solid black; */
+/* } */
+/*
+.login {
+    text-align: right;
+    width: 20%;
+}
+
+.searchBar>input {
+    border-radius: 10px;
+    height: 40px;
+    width: 70%;
+} */
+
+#third {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+    
+    /* border: 1px solid black; */
+}
+
+.a {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px ;
+  
+    width: 100%;
+    gap: 40px;
+    /* border: 1px solid black; */
+}
+/* .b{
+    border: 1px solid black;
+} */
+.c{
+    text-decoration: none;
+    display: grid;
+    height: 30px;
+    width: 100%;
+    background-color: red;
+    /* position: absolute; */
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    place-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+#four {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    
+}
+
+.fo1 {
+    /* border: 1px solid black; */
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    background-color: rgb(237, 230, 230);
+    padding: 5px;
+}
+
+.fourpart>a{
+    /* border: 1px solid black; */
+    text-decoration: none;
+    /* display: block; */
+    font-size: 15px;
+    font-weight: 55px;
+    color: black;
+    
+}
+.fo1>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo1>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo1>div:last-child {
+    width: 50%;
+}
+.fo2 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}   
+.fo2>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo2>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo2>div:last-child {
+    width: 50%;
+}
+.fo3 {
+    
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo3>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo3>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo3>div:last-child {
+    width: 50%;
+}
+.fo4 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo4>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo4>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo4>div:last-child {
+    width: 50%;
+}
+.fo5 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo5>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo5>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo5>div:last-child {
+    width: 50%;
+}
+.fo6 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo6>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo6>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo6>div:last-child {
+    width: 50%;
+}
+.fo7 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo7>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo7>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo7>div:last-child {
+    width: 50%;
+}
+.fo8 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo8>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo8>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo8>div:last-child {
+    width: 50%;
+}
+.fo9 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo9>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo9>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo9>div:last-child {
+    width: 50%;
+}
+.fo10 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo10>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo10>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo10>div:last-child {
+    width: 50%;
+}
+.fo11 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo11>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo11>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo11>div:last-child {
+    width: 50%;
+}
+.fo12 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo12>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo12>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo12>div:last-child {
+    width: 50%;
+}
+.fo13 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo13>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo13>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo13>div:last-child {
+    width: 50%;
+}
+.fo14 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo14>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo14>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo14>div:last-child {
+    width: 50%;
+}
+.fo15{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo15>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo15>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo15>div:last-child {
+    width: 50%;
+}
+.fo16 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo16>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo16>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo16>div:last-child {
+    width: 50%;
+}
+.fo17 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo17>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo17>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo17>div:last-child {
+    width: 50%;
+}
+.fo18 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo18>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo18>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo18>div:last-child {
+    width: 50%;
+}
+#five{
+    display: flex;
+    gap: 15px;
+}
+.fa{
+   color:  white;
+   background-color: black ; 
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+   border-radius: 45px;
+   width: 10%;
+   text-align: center;
+   width: 10%;
+}
+.fb{
+        color: black;
+        background-color: rgb(228, 222, 222) ; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        border-radius: 45px;
+        width: 10%;
+        text-align: center;
+        width: 15%;
+   }
+ #six > img{
+    padding: 70px 0px 70px 0px;
+    width: 100%;
+}
+.head{
+    display: flex;
+    
+}
+#head{
+    display: flex;
+}
+
+#eight{
+    display: flex;
+    /* justify-content: space-between;  */
+    gap: 35px; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.e1>img{
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* background-color: black; */
+    /* padding: 15px 0px 15px 0px; */
+}
+.e1>p{
+    font-size: 17px;
+}
+#nine{
+    display: flex;
+    padding-right: 0px 0px 0px 0px;
+    justify-content: center;
+    gap: 35px;
+}
+#ten{
+    /* height: 60%; */
+    width: 98%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 3px 10px 3px 10px;
+}
+
+
+         /* footer css */
+
+
+ #eleven{
+    display: flex;
+    padding-left: px;
+    padding-right: 5px;
+}
+#eleven>div>img{
+    width: 32%;
+    height: 15%;    
+    padding: 5px;
+}
+.e1a{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+    /* padding: 10px; */
+    border: 1px solid red;
+    padding: 10px 10px 10px 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.e1a>a{
+    background-color: red;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.e1a>input{
+    border: none;
+    padding: 5px;
+
+}
+#twelve{
+    display: flex;
+    justify-content: space-evenly;
+   padding-left: 30px;
+   padding-right: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* color: gray; */
+    gap: 30px;
+    margin: auto;
+    
+}
+.e2{
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+.e2>h2{
+    color: black;
+}
+.e2>p{
+    color: gray;
+}
+.e2:last-child{
+    border: none;
+}
+#thirteen{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 30px;
+    /* border: 1px solid black; */
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+#thirteen>img{
+    width: 1%;
+    margin-left: 5px;
+    padding-left: 25px;
+}
+#fourteen{
+    display: flex;
+     justify-content: space-between;
+     /* border: 1px solid black; */
+     border-bottom: 1px solid gray;
+}
+.ft1a{
+    /* border: 1px solid black; */
+    margin-left: 40px;
+}
+.ft1b{
+    width: 100%;
+    height: 55%;
+    /* border: 1px solid black; */
+    
+}
+.ft1b>img{
+    width: 20%;
+    padding-left: 40px;
+}
+.ft2a{
+    /* border: 1px solid black; */
+    margin-left: 15px;
+}
+.ft2b>img{
+    display: flex;
+    width: 20%;
+    height: 30px;
+    /* border: 1px solid black; */
+    margin: auto;
+    padding: 10px;
+}
+.ft2b{
+    display: flex;
+    /* border: 1px solid black; */
+}
+#nineteen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+#nineteen>p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* footer end */
+#nav{
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red ; */
+  height: 100px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+   }
+    #nav>.first{
+      display: flex;
+      /* border: 2px solid black; */
+
+    }
+    .logo {
+      /* border: 2px solid black; */
+      display: flex;
+      align-items: center;
+      height: fit-content;
+      box-sizing: border-box;
+      overflow: hidden;
+      width: 30%;
+     
+    }
+     img{
+      height: 50px;
+    }
+    .logo input{
+        font-size: x-large;
+        padding:18px;
+        border-radius: 8px;
+        
+    }
+    #links{
+      display: flex;
+      justify-content: space-around;
+      /* border: 2px solid brown; */
+      font-size: 20px;
+      width: 35%;
+      
+      
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+    }
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+  #slider{
+      width: 100%;
+      border: 2px solid red;
+      height:550px;
+      background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Elite-Desktop_1600x.jpg?v=1678452681");
+      background-size: 100% 100%;
+      animation:slider 10s infinite forwards;
+  }
+  @keyframes slider {
+      0%{
+           background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Elite-Desktop_1600x.jpg?v=1678452681");
+      }
+      25%{
+          background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD458-Desktop_1600x.jpg?v=1678424907");
+      }
+      50%{
+          background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/999-Store-Desktop_21eb064b-1e34-4938-854d-1d9f36057cba_1600x.jpg?v=1678294690");
+      }
+      75%{
+          background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/smartwatch_desktop_4133d446-c2bd-4111-9762-b07633d2553c_1600x.png?v=1678196140");
+      }
+      
+  }

@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: max-content;
+
+}
+.innerc{
+    width: 90%;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+border: 1px blue;
+}
+.allimages{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    
+}
+.smallphoto img{
+    height: 8vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.8;
+} 
+.smallphoto img:hover{
+    opacity: 1;
+}
+.mainImage img{
+    height: 30%;
+    width: 30%;
+    margin-left: 22%;
+  
+    
+}
+.smallphoto{
+    display: flex;
+flex-direction: column;
+
+
+}
+h2{
+    font-size: 25px;
+    color:rgb(46, 45, 45);
+    margin-bottom: 10px;
+}
+.price{
+    color: rgb(29,28,29);
+    font-size: 26px;
+    font-weight: bold;
+padding: 10px 10px 0 0;
+
+}
+input{
+    width: 19px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+.bDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bDiv button{
+    width: 101px;
+    padding: 3px 18px;
+    border-radius: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #b81803;
+    outline: none;
+    border: none;
+}
+#by{
+    background-color: green;
+}
+p+button{
+    background-color: rgb(175, 96, 5);
+    
+}
+.descImage1{
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.imageside{
+    height: 400px;
+    width: 70%;
+    border: 1px green;
+    
+}
+.imageside>img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.descImage1{
+    gap: 30px;
+    padding: 120px;
+    background-color: gray;
+    height: 400px;
+}
+.Div3{
+    display: flex;
+    align-items: center;
+    padding: 10px 170px 10px 150px;
+    height: max-content;
+    gap: 30px;
+}
+.Div3>div>img{
+    width: 100%;
+}
+.Div4{
+    display: flex;
+    padding: 10px 30px 10px 90px;
+    align-items: center;
+    height: 600px;
+    /* gap: 40px; */
+
+}
+.Div4>div>img{
+    width: 60%;
+}
+#rahuldiv>p+img{
+    width: 200px;
+    margin: 10% 13% 5% 10%;
+    
+}
+#rahuldiv{
+    background-color: gray;
+    padding: 60px;
+}
+#splashImg{
+    background-color: red;
+    padding: 65px;
+    
+}
+#splashImg>img{
+    width: 250px;
+    margin: 0 0 10px 150px;
+}
+.textBox>div>div>img{
+    width: 23%;
+}
+.textBox{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    border: 1px solid ;
+    padding: 10px;
+   background-color: gray;
+   border-radius: 10px;
+   
+}
+.bDiv{
+    gap: 20px;
+}
+.formality{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   padding: 10px 0 10px 0;
+    
+}
+.formality img{
+    width: 60px;
+
+}
+.formality img+p{
+    margin-left: -90px;
+}
+.descNav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20% 20px 20%;
+    background-color: black;
+    color: white;
+}
+.underdescNav{
+    text-align: center;
+    padding: 10px 10% 10px 10%;
+    
+}
+.underdescNav>p{
+    margin: 30px 0px 20px 0;
+}
+.Div1{
+    display: flex;
+ align-items: center;
+ background-color: #09050d;
+ color: white;
+
+}
+.Div1>div{
+    padding: 0 10% 0 10%;
+    width: 60%;
+}
+.Div1>div>img{
+    width: 100%;
+}
+.Div5{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    padding: 10px 30px 10px 30px;
+    
+}
+.footerDiv>input{
+    width: 50%;
+
+}
+
+.head1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 20px;
+    background-color: black;
+    color: white;
+
+}
+.head2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 20px;
+    background-color: black;
+    color: white;
+}
+.head3{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+gap: 10px 20px;
+background-color: black;
+    color: white;  
+}
+#footerMain{
+    background-color: white;
+    padding: 50px 20px 50px 20px;
+}
+.Div6{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.Div6>div img{
+    width: 100px;
+}
+.Div6>div>h3{
+    padding-bottom: 20px;
+}
+#niche+img{
+    width:400px;
+}
+#niche{
+    margin: 20px 0 30px 0;
+    background-color: gray;
+    padding: 5px 0 4px 10px;
+    border-radius: 10px;
+}

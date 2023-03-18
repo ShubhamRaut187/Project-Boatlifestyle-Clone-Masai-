@@ -1,0 +1,79 @@
+#nav{
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red ; */
+  height: 100px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+   }
+    #nav>.first{
+      display: flex;
+      /* border: 2px solid black; */
+
+    }
+    .logo {
+      /* border: 2px solid black; */
+      display: flex;
+      align-items: center;
+      height: fit-content;
+      box-sizing: border-box;
+      overflow: hidden;
+     
+    }
+     img{
+      height: 50px;
+    }
+    .logo input{
+        font-size: x-large;
+        padding:18px;
+        border-radius: 8px;
+        
+    }
+    #links{
+      display: flex;
+      justify-content: space-around;
+      /* border: 2px solid brown; */
+      font-size: 20px;
+      width: 35%;
+      
+      
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .sticky {
+position: fixed;
+top: 0;
+width: 100%;
+
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+  #slider{
+      width: 100%;
+      border: 2px solid red;
+      height:550px;
+      background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Elite-Desktop_1600x.jpg?v=1678452681");
+      background-size: 100% 100%;
+      animation:slider 10s infinite forwards;
+  }
+  @keyframes slider {
+      0%{
+           background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Elite-Desktop_1600x.jpg?v=1678452681");
+      }
+      25%{
+          background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD458-Desktop_1600x.jpg?v=1678424907");
+      }
+      50%{
+          background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/999-Store-Desktop_21eb064b-1e34-4938-854d-1d9f36057cba_1600x.jpg?v=1678294690");
+      }
+      75%{
+          background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/smartwatch_desktop_4133d446-c2bd-4111-9762-b07633d2553c_1600x.png?v=1678196140");
+      }
+      
+  }
