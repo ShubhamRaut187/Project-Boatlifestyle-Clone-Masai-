@@ -877,46 +877,38 @@
 
 </html>
 <script>
-
-    document.querySelector(".fa1").addEventListener("click", boat1);
-
-    function boat1() {
-
-        var airbuds1 = "Wireless-Earbuds";
-        localStorage.setItem("selectedCategory", airbuds1);
+document.querySelector("#smartwatch").addEventListener("click",gotosmartwatch);
+    document.querySelector("#airpods").addEventListener("click",gotoairpods);
+    document.querySelector("#neckbands").addEventListener("click",gotoneckbands);
+    document.querySelector("#wirelessheadphones").addEventListener("click",gotowirelessheadphones);
+    document.querySelector("#wirelessspeakers").addEventListener("click",gotowirelessspeakers);
+    // SmartWatch
+    function gotosmartwatch(){
+        var selectedcategory = "Smart Watch";
+        localStorage.setItem("selected_category","Smart Watch");
     }
 
-    document.querySelector(".fa2").addEventListener("click", boat2);
-
-    function boat1() {
-
-        var airbuds2 = "Wireless-Earbuds";
-        localStorage.setItem("selectedCategory", airbuds2);
+    // Airpods
+    function gotoairpods(){
+        var selectedcategory = "Wireless-Earbuds";
+        localStorage.setItem("selected_category","Wireless-Earbuds");
     }
 
-    document.querySelector(".fa3").addEventListener("click", boat3);
-
-    function boat3() {
-
-        var airbuds3 = "Wireless-Earbuds";
-        localStorage.setItem("selectedCategory", airbuds3);
+    //NeckBands
+    function gotoneckbands(){
+        var selectedcategory = "NeckBands";
+        localStorage.setItem("selected_category","NeckBands");
     }
 
-    document.querySelector(".fa4").addEventListener("click", boat4);
-
-    function boat4() {
-
-        var airbuds4 = "Wireless-Earbuds";
-        localStorage.setItem("selectedCategory", airbuds4);
+    //WirelessHeadphones
+    function gotowirelessheadphones(){
+        var selectedcategory = "Wireless-HeadPhones";
+        localStorage.setItem("selected_category","Wireless-HeadPhones");
     }
 
-    document.querySelector(".fa5").addEventListener("click", boat5);
-
-    function boat5() {
-
-        var airbuds5 = "Wireless-Earbuds";
-        localStorage.setItem("selectedCategory", airbuds15);
+    //Wireless-Speakers
+    function gotowirelessspeakers(){
+        var selectedcategory = "Wireless-Speakers";
+        localStorage.setItem("selected_category","Wireless-Speakers");
     }
-
-
 </script>
