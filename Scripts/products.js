@@ -445,7 +445,7 @@ function displayproducts(list){
         div2.setAttribute("class","details");
 
         var anch1 = document.createElement("a");
-        anch1.setAttribute("href","hello.html");
+        anch1.setAttribute("href","product2.html");
         anch1.setAttribute("class","product_name");
         anch1.textContent = elem.Name;
         anch1.addEventListener("click",function(){
@@ -510,7 +510,7 @@ function displayproducts(list){
     })
 }
 // Product Details Function
-var productdetails=JSON.parse(localStorage.getItem("product_details")) || [];
+var productdetails=[];
 function details(elem){
     // alert("clicked");
     productdetails.push(elem);
