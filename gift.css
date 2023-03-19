@@ -1,0 +1,350 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* nav start  */
+#nav input{
+  font-size: large;
+  padding: 15px;
+  width: 80%;
+  border-radius: 20px;
+  background-color: rgb(230, 226, 226);
+  border: none;
+   }
+   
+   #nav{
+     /* box-sizing: border-box; */
+     display: flex;
+     justify-content: space-around;
+     /* border: 2px solid red ; */
+   height: 100px;
+   align-items: center;
+   margin: auto;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   background-color: white;
+    }
+     #nav>.first{
+       display: flex;
+       /* border: 2px solid black; */
+ 
+     }
+     
+     .logo {
+      width: 25%;
+       
+       justify-content: space-between;
+       display: flex;
+       align-items: center;
+       height: fit-content;
+       box-sizing: border-box;
+       overflow: hidden;
+      
+     }
+    #nav  img{
+       height: 45px;
+       margin-left: 10px;
+     }
+     #links{
+       display: flex;
+       justify-content: space-between;
+       /* border: 2px solid brown; */
+       font-size: 20px;
+       width: 40%;
+       text-decoration: none;
+       
+       
+     }
+     a{
+       text-decoration: none;
+       font-weight: bold;
+     }
+     .sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ 
+ }
+ 
+ .sticky + .content {
+ padding-top: 60px;
+ }
+ /* nav end  */
+/* .mainnav{
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     
+}
+.logonav>img{
+  width: 80px;
+  padding-left: 5px;
+}
+.innernav>ul{
+  display:inline-flex;
+  list-style: none;
+}
+.innernav>ul>li{
+  width: 140px;
+  margin: 5px;
+  padding: 15px;
+}
+.innernav>ul>li>a{
+  text-decoration: none;
+  color: black;
+}
+.innernav ul li :hover{
+  color: red;
+}
+
+.subCategory{
+  display: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.innernav ul li:hover .subCategory{
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 15px;
+  margin-left: -10px;
+}
+.subCategory ul{
+  list-style: none;
+}
+.subCategory ul li :hover{
+  color: red;
+  border-radius: 2px;
+}
+.subCategory ul li a{
+  text-decoration: none;
+  color: black;
+
+}
+.more{
+  display: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.innernav ul li:hover .more{
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.more ul{
+  list-style: none;
+}
+.more ul li a{
+  text-decoration: none;
+  color: black;
+
+}
+.daily li{
+  display: none;
+
+}
+.innernav ul li:hover.daily{
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-left: 10px;
+  
+
+}
+.daily>div>img{
+  width: 100%;
+}
+
+.third>input{
+  width: 250px;
+  height: 35px;
+  background-color: rgb(225, 221, 221);
+  padding: 0 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+
+}
+.third>button{
+  width: max-content;
+  border: none;
+}
+.li{
+  font-weight: bolder;
+  font-size: larger;
+} */
+
+.main{
+    background-color: #ebebeb;
+    display: flex;
+ justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.inner{
+  /* display: flex; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+    width: 40%;
+    font-weight: bolder;
+}
+
+.innernav>h3:hover{
+color: red;
+}
+.inner>button{
+    margin-top: 10%;
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+ 
+}
+.inner>button:hover{
+background-color: green;
+}
+.amount{
+    display: flex;
+    background-color:red;
+}
+.amount img{
+    width: 100%;
+    
+}
+#eleven{
+  display: flex;
+  /* padding-left: px; */
+  padding-right: 5px;
+  border-top: 1px solid darkgrey;
+}
+#eleven>div>img{
+  width: 32%;
+  height: 25%;    
+  padding: 5px;
+}
+.e1a{
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center;
+  /* padding: 10px; */
+  border: 1px solid red;
+  padding: 10px 10px 10px 10px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.e1a>a{
+  background-color: red;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.e1a>input{
+  border: none;
+  padding: 5px;
+
+}
+#twelve{
+  display: flex;
+  justify-content: space-evenly;
+ /* padding-left: 30px; */
+ padding-right: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  /* color: gray; */
+  gap: 30px;
+  margin: auto;
+  
+}
+.e2{
+  padding: 10px;
+  border-right: 1px solid gray;
+}
+.e2>h2{
+  color: black;
+}
+.e2>p{
+  color: gray;
+  line-height: 25px;
+}
+.e2:last-child{
+  border: none;
+}
+#thirteen{
+  display: flex;
+  /* justify-content: space-between; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 30px;
+  /* border: 1px solid black; */
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+#thirteen>img{
+  width: 3%;
+  margin-left: 5px;
+  padding-left: 25px;
+}
+#fourteen{
+  display: flex;
+   justify-content: space-between;
+   /* border: 1px solid black; */
+   border-bottom: 1px solid gray;
+}
+.ft1a{
+  /* border: 1px solid black; */
+  margin-left: 40px;
+}
+.ft1b{
+  width: 100%;
+  height: 55%;
+  /* border: 1px solid black; */
+  
+}
+.ft1b>img{
+  width: 20%;
+  padding-left: 40px;
+}
+.ft2a{
+  /* border: 1px solid black; */
+  margin-left: 15px;
+}
+.ft2b>img{
+  display: flex;
+  width: 20%;
+  height: 40px;
+  /* border: 1px solid black; */
+  object-fit: cover;
+  margin: auto;
+  padding: 10px;
+}
+.ft2b{
+  display: flex;
+  /* border: 1px solid black; */
+  padding: 5px;
+}
+#nineteen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+}
+#nineteen>p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}

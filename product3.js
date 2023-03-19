@@ -1,4 +1,4 @@
-let productArray=JSON.parse(localStorage.getItem("productArrayData"))|| []
+let productArray= []
  upload(productArray);
  function upload(productArray){
     let obj={
@@ -19,7 +19,7 @@ let productArray=JSON.parse(localStorage.getItem("productArrayData"))|| []
         // localStorage.setItem("productArrayData",JSON.stringify(productArray));
         show(productArray)
  }
-      
+// show(productArray)
           
         
           function show(productArray){

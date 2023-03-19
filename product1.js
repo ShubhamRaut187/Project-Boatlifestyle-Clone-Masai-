@@ -1,4 +1,4 @@
-let productArray=JSON.parse(localStorage.getItem("productArrayData"))|| []
+let productArray=[]
 upload(productArray);
 function upload(productArray){
    let obj={
@@ -20,7 +20,7 @@ function upload(productArray){
        show(productArray)
 }
      
-         
+// show(productArray)
        
          function show(productArray){
 
@@ -58,6 +58,9 @@ function upload(productArray){
            let buy=document.createElement("button");
            buy.textContent="Buy";
            buy.setAttribute("id","by");
+           buy.addEventListener("click",function(){
+            buytocart(elem,ind);
+           })
 
              bDiv.append(cart,buy);
              
@@ -71,7 +74,13 @@ function upload(productArray){
            })
 
          }
+         var pD=JSON.parse(localStorage.getItem("details"))||[]
           
+            function buytocart(elem,ind){
+              pD.push(elem);
+              localStorage.setItem("details",JSON.stringify(pD));
+          }
+    
 
        function choose(smallphoto){
            let picSelect=document.getElementById("imagebox");

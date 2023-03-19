@@ -68,19 +68,29 @@ input{
     display: flex;
     justify-content: space-evenly;
 }
-
 .bDiv button{
-    width: 101px;
-    padding: 3px 18px;
+    width: 25%;
+    height: 30px;
+   margin-top: 20px;
     border-radius: 13px;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: #b81803;
+    background-color: #f7c20a;
     outline: none;
     border: none;
 }
+.bDiv button:hover{
+    background-color:green;
+}
 #by{
+    background-color:red;
+}
+#by:hover{
     background-color: green;
+}
+p+button{
+    background-color: rgb(175, 96, 5);
+    
 }
 p+button{
     background-color: rgb(175, 96, 5);
@@ -158,18 +168,22 @@ justify-content: space-around;
     display: flex;
     border: 1px solid ;
     padding: 10px;
-   background-color: gray;
+   /* background-color: gray; */
+   /* background: linear-gradient(117deg, #a59792 60%, #f01e1e 60%); */
    border-radius: 10px;
    
 }
 .bDiv{
     gap: 20px;
 }
+
+/* nav ke neeeche wala */
 .formality{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
    padding: 10px 0 10px 0;
+   background-color: #e8edf0;
     
 }
 .formality img{
@@ -179,6 +193,7 @@ justify-content: space-around;
 .formality img+p{
     margin-left: -90px;
 }
+/* nav ke necche wala */
 .descNav{
     display: flex;
     justify-content: space-around;
