@@ -63,15 +63,15 @@ let productArray=JSON.parse(localStorage.getItem("product_details"))|| []
 
             let cart=document.createElement("button");
             cart.textContent="Add to cart";
-            cart.setAttribute("href","payment.html")
             cart.addEventListener("click",function(){
               addToCart(elem,ind);
             })
             
+            
+            
             let buy=document.createElement("button");
             buy.textContent="Buy";
             buy.setAttribute("id","by");
-
               bDiv.append(cart,buy);
               
             priceDiv.append(price,Mrp,gift,discount,desc, h3,status);
@@ -96,3 +96,27 @@ let productArray=JSON.parse(localStorage.getItem("product_details"))|| []
             localStorage.setItem("cart_list",JSON.stringify(pD));
         }
     
+        function goToWL(){
+          var selectedcategory = "Wireless-Earbuds";
+             localStorage.setItem("selected_category","Wireless-Earbuds");
+         }
+         function goToWH(){
+             var selectedcategory = "Wireless-HeadPhones";
+             localStorage.setItem("selected_category","Wireless-HeadPhones");
+         }
+         function goToW(){
+             var selectedcategory = "Smart Watch";
+             localStorage.setItem("selected_category","Smart Watch");
+         }
+         function goToBW(){
+             var selectedcategory = "NeckBands";
+             localStorage.setItem("selected_category","NeckBands");
+         }
+         function goToSS(){
+             var selectedcategory = "Wireless-Speakers";
+             localStorage.setItem("selected_category","Wireless-Speakers");
+         }
+         function goToLE(){
+             var selectedcategory = "Wireless-HeadPhones";
+             localStorage.setItem("selected_category","Wireless-HeadPhones");
+         }

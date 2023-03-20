@@ -95,3 +95,32 @@ var pD=JSON.parse(localStorage.getItem("details"))||[]
            let picSelect=document.getElementById("imagebox");
            picSelect.src=smallphoto.src;
        }
+         
+
+      //  nav scrpit start 
+      function goToWL(){
+        var selectedcategory = "Wireless-Earbuds";
+           localStorage.setItem("selected_category","Wireless-Earbuds");
+       }
+       function goToWH(){
+           var selectedcategory = "Wireless-HeadPhones";
+           localStorage.setItem("selected_category","Wireless-HeadPhones");
+       }
+       function goToW(){
+           var selectedcategory = "Smart Watch";
+           localStorage.setItem("selected_category","Smart Watch");
+       }
+       function goToBW(){
+           var selectedcategory = "NeckBands";
+           localStorage.setItem("selected_category","NeckBands");
+       }
+       function goToSS(){
+           var selectedcategory = "Wireless-Speakers";
+           localStorage.setItem("selected_category","Wireless-Speakers");
+       }
+       function goToLE(){
+           var selectedcategory = "Wireless-HeadPhones";
+           localStorage.setItem("selected_category","Wireless-HeadPhones");
+       }
+
+      //  nav script end

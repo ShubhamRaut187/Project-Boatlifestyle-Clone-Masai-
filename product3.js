@@ -82,3 +82,29 @@ let productArray= []
             pD.push(elem);
             localStorage.setItem("details",JSON.stringify(pD));
         }
+
+
+        function goToWL(){
+          var selectedcategory = "Wireless-Earbuds";
+             localStorage.setItem("selected_category","Wireless-Earbuds");
+         }
+         function goToWH(){
+             var selectedcategory = "Wireless-HeadPhones";
+             localStorage.setItem("selected_category","Wireless-HeadPhones");
+         }
+         function goToW(){
+             var selectedcategory = "Smart Watch";
+             localStorage.setItem("selected_category","Smart Watch");
+         }
+         function goToBW(){
+             var selectedcategory = "NeckBands";
+             localStorage.setItem("selected_category","NeckBands");
+         }
+         function goToSS(){
+             var selectedcategory = "Wireless-Speakers";
+             localStorage.setItem("selected_category","Wireless-Speakers");
+         }
+         function goToLE(){
+             var selectedcategory = "Wireless-HeadPhones";
+             localStorage.setItem("selected_category","Wireless-HeadPhones");
+         }
