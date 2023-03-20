@@ -117,5 +117,5 @@ function myFunction() {
 
   document.querySelector("#boathome").addEventListener("click",home)
 function home(){
-  window.open("home11.html")
+  window.open("index.html")
 }
