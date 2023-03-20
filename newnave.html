@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 5px #ababab;
+    padding: 13px 50px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  nav > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav > div > img{
+    width: 85px;
+    cursor: pointer;
+  }
+  nav > div > div >img{
+    width: 22px;
+    cursor: pointer;
+  }
+  nav > div > div:first-of-type > *{
+    margin: 0px 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  nav > div > div:first-of-type{
+    margin-right:55px;
+  }
+  nav > div > div:first-of-type > span > a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  nav > div > div:last-of-type {
+    display: flex;
+    align-items: center;
+  }
+  nav > div > div:last-of-type > *{
+    margin: 0px 10px;
+  }
+  nav > div > div:last-of-type > input{
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 2em;
+    padding: 11px 55px;
+  }
+  #errspan {
+    margin-right: -40px;
+    z-index: 2;
+    color: rgb(135, 135, 135);
+  }
+  nav .fa-bars {
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+  }
+  .show2 {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: white;
+    right:10px;
+    top: 80px;
+    border: 3px solid lightgray;
+    padding: 10px;
+  }
+  .show2 p{
+    color: #FF0000;
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  .show2 a{
+    background-color: #FF0000;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 190px;
+    padding: 40px 30px 30px 30px;
+    margin-left: -40px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .show {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 20px 5px 20px;
+    margin-left: -230px;
+  }
+  
+  .show3{
+    display:block;
+  }
+  
+  .dropdown-content div{
+    padding: 3px 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor:pointer;
+  }
+  .dropdown-content div > p{
+    margin-top: 0px;
+    text-align: center;
+  }
+  .dropdown-content div > img{
+    width:100px;
+    margin:auto;
+  }
+  
+  nav > div > div:first-of-type span:hover .dropdown-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 20px 5px 20px;
+    margin-left: -230px;
+    margin-top: 20px;
+  }
+  
+  nav>div>div:first-of-type>span {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0px;
+  }
+  
+  
+  .dropdown-content2 a {
+  color: black;
+  font-weight: 400;
+  padding: 5px 0px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  nav>div>div:first-of-type>span:hover .dropdown-content2{display: block;}
+  
+  nav > div > div:first-of-type a {
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 1em;
+  }
+  
+  nav > div > div:first-of-type a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav > div > div:first-of-type a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+ 
+    </style>
+</head>
+<body>
+  
+    
+    <nav>
+        <div>
+            <i class="fa-solid fa-bars"></i>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935" alt="logo" onclick="showMain()">
+            <div>
+                <span>
+                    <a href="#" onclick="showDiv()" class="dropbtn">CATEGORIES</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div onclick="goToWL()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_100x.png?v=1663752600" alt="">
+                            <p>Airdopes True Wireless</p>
+                        </div>
+                        <div onclick="goToWH()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_100x.png?v=1663752867" alt="">
+                            <p>Rockerz Wireless</p>
+                        </div>
+                        <div onclick="goToW()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/pro_gear_100x.jpg?v=1675683311" alt="">
+                            <p>Smart Watches</p>
+                        </div>
+                        <div onclick="goToBW()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_100x.png?v=1663753167" alt="">
+                            <p>Bassheads Wired</p>
+                        </div>
+                        <div onclick="goToSS()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_100x.png?v=1663753243" alt="">
+                            <p>Stone Speakers</p>
+                        </div>
+                        <div onclick="goToAH()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_100x.png?v=1663753280" alt="">
+                            <p>Aavante Home Audio</p>
+                        </div>
+                        <div onclick="goToMA()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/bence-boros-253214-unsplash_100x.jpg?v=1675683444" alt="">
+                            <p>Mobile Accessories</p>
+                        </div>
+                        <div onclick="goToW()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_100x.png?v=1675683871" alt="">
+                            <p>Trebel for Women</p>
+                        </div>
+                        <div onclick="goToLE()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_100x.png?v=1675683940" alt="">
+                            <p>Limited Edition</p>
+                        </div>
+                        <div onclick="goToT()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_100x.png?v=1663753379" alt="">
+                            <p>Misfit Trimmers</p>
+                        </div>
+                        <div onclick="goToIG()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_100x.png?v=1663753419" alt="">
+                            <p>Immortal Gaming</p>
+                        </div>
+                    </div>
+                </span>
+                <a href="dailydeals3.html">DAILY DEALS</a>
+                <a href="Gift.html">GIFT WITH BOAT</a>
+                <span>
+                    <a href="#">MORE</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content2">
+                        <a href="advertise.html">Do What Floats Your boAt</a>
+                        <a href="blogs.html
+                        ">Blogs</a>
+                        <a href=" bulkorder.html">Corporate Orders</a>
+                        <a href="">Earn ₹100</a>
+                        <a href="">Careers</a>
+                        <a href="">Social Responsibility</a>
+                        <a href="">Meet the boAtheads</a>
+                      </div>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass" id="errspan"></i>
+                <input type="text" placeholder="Search">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="profile" onclick="showLogin()">
+                <div class="show2">
+                    <p>Hi boAthead!</p>
+                    <a href="login.html">Login</a>
+                </div>
+                <img class="toggle-btn" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Cart_7e68f099-c0bf-4966-a9ef-14d1a3af07ad.png?v=1673260730" alt="cart" id="open-panel"> 
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
