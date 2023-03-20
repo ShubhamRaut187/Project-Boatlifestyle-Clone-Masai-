@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Nitin</title>
+    <link rel="stylesheet" href="homenitin.css">
+    <style>
+
+        *{
+        margin: 0;
+        padding: 0;
+        }
+     #upNoti{
+        background-color: black;
+        color: white;
+        font-size:x-large;
+        text-align: center;
+        padding: 10px;
+        
+
+     }
+
+     .formality{
+        display: flex;
+        justify-content: space-around;
+        background-color: #e8edf0;
+        align-items: center;
+        margin-top: 20px;
+        
+     }
+     .formality hr{
+        height: 30px;
+        width: 0%;
+        margin-top: 0px;
+        
+     }
+     .formality div{
+        height: 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: medium;
+        font-weight:400
+        
+     }
+     .formality div img{
+        height: 65px;
+        
+        
+     }
+     #offerhub{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+     }
+
+     /* offer hub shubham css */
+     .child{
+    display: flex;
+    /* border: 1px solid gray; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.image{
+    width: 35%;
+    height: auto;
+    /* border:1px solid gray ;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px; */
+    border-right: 1px solid #e7e7e7;
+    text-align: center;
+    
+}
+.pic{
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    height: auto;
+}
+.details{
+    width: 70%;
+    height: auto;
+    /* border:2px solid black ; */
+    padding-left: 20px;
+    padding-top: 10px;
+}
+div > img{
+    width: 100%;
+}
+.product_name{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    
+    
+}
+.price_details{
+    display: flex;
+    justify-content: flex-start;
+    /* margin-top: -20px; */
+}
+.percentoff{
+    margin-left: 15px;
+    color: green;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.percentoff + h4{
+    margin-left: 15px;
+    text-decoration: line-through;
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.price{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.reviews{
+    border: 1px solid #e7e7e7;
+    width: 90%;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #f5f5f5;
+}
+.product_rating{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+.reviews + p{
+    margin-top: 2px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.acbtn{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f7c20a;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+button:hover{
+    background-color: #ff0000;
+}
+.nmbtn{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f7c20a;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.nmdiv{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f7c20a;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nmdiv:hover{
+    background-color: #ff0000;
+}
+.nmanchor{
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    /* border: 2px solid black; */
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+hr{
+    width: 95%;
+    margin-top: 10px;
+}
+/* shubham css end */
+.offersHub{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+.offerButton{
+    display: flex;
+    width:60%;
+    justify-content: space-between;
+    
+}
+.offerButton button{
+    /* height: 40px; */
+    width: 30%;
+    background-color: #f7c20a;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 18px 18px;
+}
+.offerButton button:hover{
+    background-color: #ff0000;
+}
+
+#slider +h1{
+    margin-top: 30px;
+}
+
+#offerhub{
+    margin-top: 50px;
+}
+#offerhub2{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+     }
+#offerhub3{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 50px;
+     }
+/* vijay css shop by category */
+#four {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+#four div {
+   padding:8px;
+   border-radius: 8px;
+}
+
+
+.fo1 {
+    /* border: 1px solid black; */
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    background-color: rgb(237, 230, 230);
+    padding: 5px;
+}
+
+.fourpart>a{
+    /* border: 1px solid black; */
+    text-decoration: none;
+    /* display: block; */
+    font-size: 15px;
+    font-weight: 55px;
+    color: black;
+    
+}
+.fo1>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo1>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo1>div:last-child {
+    width: 50%;
+}
+.fo2 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}   
+.fo2>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo2>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo2>div:last-child {
+    width: 50%;
+}
+.fo3 {
+    
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo3>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo3>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo3>div:last-child {
+    width: 50%;
+}
+.fo4 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+   
+}
+.fo4>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo4>div:first-child {
+    width: 50%;
+    line-height: 10px;
+   
+}
+.fo4>div:last-child {
+    width: 50%;
+}
+.fo5 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo5>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo5>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo5>div:last-child {
+    width: 50%;
+}
+.fo6 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo6>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo6>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo6>div:last-child {
+    width: 50%;
+}
+.fo7 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo7>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo7>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo7>div:last-child {
+    width: 50%;
+}
+.fo8 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo8>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo8>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo8>div:last-child {
+    width: 50%;
+}
+.fo9 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo9>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo9>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo9>div:last-child {
+    width: 50%;
+}
+.fo10 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo10>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo10>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo10>div:last-child {
+    width: 50%;
+}
+.fo11 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo11>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo11>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo11>div:last-child {
+    width: 50%;
+}
+.fo12 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo12>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo12>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo12>div:last-child {
+    width: 50%;
+}
+.fo13 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo13>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo13>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo13>div:last-child {
+    width: 50%;
+}
+.fo14 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo14>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo14>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo14>div:last-child {
+    width: 50%;
+}
+.fo15{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo15>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo15>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo15>div:last-child {
+    width: 50%;
+}
+.fo16 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo16>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo16>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo16>div:last-child {
+    width: 50%;
+}
+.fo17 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo17>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo17>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo17>div:last-child {
+    width: 50%;
+}
+.fo18 {
+    /* border: 1px solid black; */
+    display: flex;
+    background-color:  whitesmoke;
+}
+.fo18>div>img {
+    padding: 10px;
+    width: 80%;
+}
+.fo18>div:first-child {
+    width: 50%;
+    line-height: 10px;
+}
+.fo18>div:last-child {
+    width: 50%;
+}
+
+/* shop by category end best of boat */
+   /* best of boat */
+
+    </style>
+</head>
+
+<body>
+    <div id="upNoti">The 999 store is live.Everything at $999.Ends soon.</div>
+    <!-- navbar -->
+ <!-- nav bar html -->
+    <!-- <div class="nav"> -->
+        <div id="nav">
+            <div class="first" >
+                    <img id="boathome" src="https://tse3.mm.bing.net/th?id=OIP.2pWluCnobYZhbRIuyIWtHAHaD4&pid=Api&P=0" alt="boat">
+            </div> 
+             <div id="links">
+                <a href="products.html">CATEGORIES</a>   
+                <a href="">DAILY DEALS</a>
+                <a href="">GIFT WITH BOAT</a>
+                <a href="">MORE</a>
+             </div>
+            <div class="logo">
+               
+                    <input type="search" placeholder="Type to search" >
+                    <a href="login.html" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" alt="login"></a>
+                   <a href="Cart.html"><img src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" alt="cart"></a> 
+               
+            </div>
+        
+          </div>
+         
+        <!-- </div> -->
+        <!-- nav bar end -->
+        <div class="formality content">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-1b_6c0c5f7d-a48c-40f5-946d-ea50fb1a9b82_small.png?v=1661243559" id="wlogo" >
+               <p> 1 YEAR  <br>
+                WARRANTY</p>
+            </div>
+              <hr>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-3b_b82496cc-51ed-47ad-b27a-a195b646bea1_small.png?v=1661244593">
+                <p> 7 DAYS <br>
+                 REPLACEMENT</p>
+            </div>
+             <hr>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-2b_dc921406-33cc-4867-846b-293610d69a41_small.png?v=1661244611">
+                <p> FREE <br>
+                 SHIPPING</p>
+            </div>
+             <hr>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-4b_1d19c7fb-8da7-407e-8612-946e106cc508_small.png?v=1661244611">
+                <p> SECURE <br>
+                 CHECKOUT</p>
+            </div>
+             <hr>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-black-v1_small.png?v=1661245767">
+                <p> GST <br>
+                 Billing</p>
+            </div>
+             
+        </div>
+
+        <!-- formality end here -->
+        <!-- slider -->
+        <div id="slider" class="content slider">
+       
+        </div>
+
+        <!-- slider end -->
+        <!-- offershub -->
+        <h1>Offers Hub</h1>
+        <div class="offersHub content">
+
+            
+          <div class="offerButton">
+            <button onclick="show749()">
+               UNDER 1000 STORE
+            </button>
+            <button onclick="show999()">
+              UNDER  1500 STORE
+            </button>
+            <button onclick="show1299()">
+              UNDER 3000 STORE
+            </button>
+          </div>  
+          <div class="offerAnchor">
+            <a href="products.html">View All></a>
+          </div>
+        </div>
+
+          <div id="offerhub" class="offerdivs content">
+
+          </div>
+    <!-- Shop By category Vijay -->
+    <h1 class="content">Shop By Category</h1>
+
+    <div id="four" class="content">
+
+        <div class="fo1">
+            <div class="fourpart">
+                <a href="products.html" class="fa1">True  WirelessEarbuds</a>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_black_1a9582f0-1870-4ab6-a0b0-5b977a8851a6_300x.png?v=1671193643"
+                    alt="as">
+            </div>
+        </div>
+        <div class="fo2">
+            <div class="fourpart">
+            <a href="products.html" class="fa2">Wireless Bluetooth</a>
+        </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/blue_83bb1e1b-8519-4bd9-83b8-92299b0b375d_300x.png?v=1661509030"
+                    alt="njbh">
+            </div>
+        </div>
+        <div class="fo3">
+            <div class="fourpart">
+           <a href="products.html" class="fa3">Smart Watches</a>
+           </div> 
+           <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_eaf60560-3afb-4dda-b4c0-598078f7ce72_300x.png?v=1647767874"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo4">
+            <div class="fourpart">
+            <a href="products.html" class="fa4">Wired Headphones</a>
+           </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo5">
+            <div class="fourpart">
+            <a href="products.html" class="fa5">Wireless Speakers</a>
+           </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_250_black_600x.png?v=1673001721"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo6">
+            <div class="fourpart">
+           <a href="products.html" class="fa6">Wireless Headphones</a>
+            </div> 
+           <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo7">
+            <div class="fourpart">
+            <a href="products.html" class="fa7">Wired earphones</a>
+             </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2176f9c3-7b8b-4c29-b6e9-668e45aa6c97_47337d1c-5c17-44d6-b243-f677d8b7586f_800x.png?v=1678441998"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo8">
+            <div class="fourpart">
+            <a href="products.html" class="fa8">Soundbars</a>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_03786e84-2bf4-4d79-acc7-adaf74b052f0_600x.png?v=1647671737"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo9">
+            <div class="fourpart">
+           <a href="products.html" class="fa9">Gaming Headphones</a>
+            </div> 
+           <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_f3aa2756-01f3-4e39-80bc-7b4f6551c7aa_600x.png?v=1625748159"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo10">
+            <div class="fourpart">
+           <a href="products.html" class="fa10">Party Speakers</a>
+           </div> 
+           <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/resize-2_600x.png?v=1655187482"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo11">
+            <div class="fourpart">
+            <a href="products.html" class="fa11">Trimmers</a>
+          </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/d67adff0-f513-4b4b-abdc-226ee39287a6_600x.png?v=1625045409"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo12">
+            <div class="fourpart">
+           <a href="products.html" class="fa12">Chargers</a>
+           </div> 
+           <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-ltg-500_600x.png?v=1613736579"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo13">
+            <div class="fourpart">
+            <a href="products.html" class="fa13">Power banks</a>
+           </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_250_black_600x.png?v=1673001721"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo14">
+            <div class="fourpart">
+            <a href="products.html" class="fa14">Cables</a>
+          </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/car-charger-main-image_1e0addf3-ca17-46c3-94ac-c7b60b752dea_600x.png?v=1663154266"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo15">
+            <div class="fourpart">
+           <a href="products.html" class="fa15">Car Accessories</a>
+           </div>
+           <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/77081a14-84ab-4a56-9977-9c902c341e5a_900x.png?v=1625045422"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo16">
+            <div class="fourpart">
+           <a href="products.html" class="fa16">TRebel Range</a>
+          </div>
+           <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/141white_600x.png?v=1678862933"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo17">
+            <div class="fourpart">
+          <a href="products.html" class="fa17">Limited Editions</a>
+          </div>  
+          <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/DisneyStormPackaging3.1591_600x.png?v=1640110480"
+                    alt="sdf">
+            </div>
+        </div>
+        <div class="fo18">
+            <div class="fourpart">
+           <a href="products.html" class="fa18">View All</a>
+           </div>
+           <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/logo123_171ada23-0c67-477b-84d1-21fe1bad3909_small.png?v=1674022741"
+                    alt="sdf">
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Best Of Boat</h1>
+    <div class="offersHub content">
+
+        
+      <div class="offerButton">
+        <button >
+           Best Sellers
+        </button>
+        <button >
+          Top Earbuds
+        </button>
+        <button >
+          Trending Wireless
+        </button>
+      </div>  
+      <div class="offerAnchor">
+        <a href="products.html">View All></a>
+      </div>
+    </div>
+
+      <div id="offerhub2" class="offerdivs content">
+         
+      </div>
+      <h1>Smart Watches</h1>
+      <div class="offersHub content">
+
+          
+        <div class="offerButton">
+          <button >
+             BT Calling
+          </button>
+          <button >
+            AMOLED 
+          </button>
+          <button >
+            Fashion
+          </button>
+        </div>  
+        <div class="offerAnchor">
+          <a href="products.html">View All></a>
+        </div>
+      </div>
+
+        <div id="offerhub3" class="offerdivs content">
+
+        </div>
+    
+
+
+
+</body>
+<script >
+
+    var arrOf4 =[{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Beige_large.png?v=1660370349",
+    Name:"Wave Select Smartwatch",
+    Price:2099,
+    MRP:6900,
+    Percent_off:"80% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:" 1.69(4.29 cm) Colour HD Display, 20+ Active Sport Modes, Heart Rate & SpO2 Monitor, 10 Day Battery Life",
+    Category:"Smart Watch",
+    Status:"Out-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/black_bdca4987-8550-461d-bb37-b1bae02009b4_600x.png?v=1678969539",
+    Name:"Wave Lite",
+    Price:1499,
+    MRP:6900,
+    Percent_off:"79% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:" 1.69(4.29 cm) Colour HD Display, 20+ Active Sport Modes, Heart Rate & SpO2 Monitor, 10 Day Battery Life",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/wave-call-3_300x.png?v=1658295343",
+    Name:"Wave Call",
+    Price:1499,
+    MRP:7990,
+    Percent_off:"80% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Bluetooth Calling Smartwatch with 1.69 (4.29 cm) HD Curved Display, 150+ Watch Faces, Heart Rate & SPO2 Monitoring",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+// Airpods
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/cream_300x.png?v=1668756103",
+    Name:"Airdopes 131",
+    Price:999,
+    MRP:2990,
+    Percent_off:"67% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers and IWP Technology, 650mah C type Charging Case",
+    Category:"Wireless-Earbuds",
+    Status:"In-Stock",
+},]
+   
+arrOf4.map(function(elem,index){
+        var div = document.createElement("div");
+        div.setAttribute("class","child");
+
+        var div1=document.createElement("div");
+        div1.setAttribute("class","image");
+
+        var image = document.createElement("img");
+        image.setAttribute("src",elem.Image);
+        image.setAttribute("alt",elem.Name);
+
+        div1.append(image);
+
+        var div2 = document.createElement("div");
+        div2.setAttribute("class","details");
+
+        var anch1 = document.createElement("a");
+        anch1.setAttribute("href","hello.html");
+        anch1.setAttribute("class","product_name");
+        anch1.textContent = elem.Name;
+        anch1.addEventListener("click",function(){
+            details(elem);
+        });
+
+        var div3 = document.createElement("div");
+        div3.setAttribute("class","price_details")
+
+        var h42 = document.createElement("h4");
+        h42.setAttribute("class","price");
+        h42.textContent = elem.Price;
+
+        var h43 = document.createElement("h4");
+        h43.setAttribute("class","percentoff");
+        h43.textContent = elem.Percent_off;
+
+        var h44 = document.createElement("h4");
+        h44.textContent = elem.MRP;
+        
+        div3.append(h42,h43,h44);
+
+        var div4 = document.createElement("div");
+        div4.setAttribute("class","reviews");
+
+        var p1 = document.createElement("p");
+        p1.setAttribute("class","product_rating");
+        p1.textContent = elem.Rating;
+
+        div4.append(p1);
+
+        var p2 = document.createElement("p");
+        p2.textContent = elem.Discount;
+
+        var btn;
+        
+        if(elem.Status === "In-Stock"){
+            btn = document.createElement("button");
+            btn.setAttribute("class","acbtn");
+            btn.textContent = "ADD TO CART";
+            btn.addEventListener("click",function(){
+            addtocart(elem);
+           })
+        }
+        else{
+            btn = document.createElement("div");
+            btn.setAttribute("class","nmdiv");
+            var nmbtn = document.createElement("a");
+            nmbtn.setAttribute("href","hello.html");
+            nmbtn.setAttribute("class","nmanchor");
+            nmbtn.textContent = "NOTIFY ME";
+            nmbtn.addEventListener("click",function(){
+                notifyme(elem);
+            })
+            btn.append(nmbtn);
+        }
+
+        div2.append(anch1,div3,div4,p2,btn);
+        div.append(div1,div2);
+        var clone = div.cloneNode(true);
+        document.querySelector("#offerhub2").append(div);
+        document.querySelector("#offerhub3").append(clone);
+    })
+
+
+
+
+
+    var productlistval = [{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Beige_large.png?v=1660370349",
+    Name:"Wave Select Smartwatch",
+    Price:2099,
+    MRP:6900,
+    Percent_off:"80% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:" 1.69(4.29 cm) Colour HD Display, 20+ Active Sport Modes, Heart Rate & SpO2 Monitor, 10 Day Battery Life",
+    Category:"Smart Watch",
+    Status:"Out-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/black_bdca4987-8550-461d-bb37-b1bae02009b4_600x.png?v=1678969539",
+    Name:"Wave Lite",
+    Price:1499,
+    MRP:6900,
+    Percent_off:"79% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:" 1.69(4.29 cm) Colour HD Display, 20+ Active Sport Modes, Heart Rate & SpO2 Monitor, 10 Day Battery Life",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/wave-call-3_300x.png?v=1658295343",
+    Name:"Wave Call",
+    Price:1499,
+    MRP:7990,
+    Percent_off:"80% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Bluetooth Calling Smartwatch with 1.69 (4.29 cm) HD Curved Display, 150+ Watch Faces, Heart Rate & SPO2 Monitoring",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+// Airpods
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/cream_300x.png?v=1668756103",
+    Name:"Airdopes 131",
+    Price:999,
+    MRP:2990,
+    Percent_off:"67% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers and IWP Technology, 650mah C type Charging Case",
+    Category:"Wireless-Earbuds",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/grey_600x.png?v=1668599490",
+    Name:"Airdopes 141",
+    Price:1299,
+    MRP:4490,
+    Percent_off:"79% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Equipped with 8mm drivers, Upto 42 Hours Total Playback, ENx™ Technology, ASAPTM Charge",
+    Category:"Wireless-Earbuds",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_white_9263689b-ad66-47cd-8183-f59685e1dff6_600x.png?v=1671193643",
+    Name:"Airdopes 163",
+    Price:1399,
+    MRP:2490,
+    Percent_off:"44% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earbuds with Massive Playback of upto 17 Hour, IPX5 Water & Sweat Resistance, IWP Technology, Type C Interface",
+    Category:"Wireless-Earbuds",
+    Status:"In-Stock",
+},
+//NeckBands
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-235-v2-red_de759211-e939-4ce9-9a77-c68705104ea7_600x.png?v=1667648184",
+    Name:"TRebel Rockerz 235 V2",
+    Price:1199,
+    MRP:2990,
+    Percent_off:"60% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earphone with 10mm Drivers, 8 Hours Non-Stop Music, Single Command Assist, Fast Charging",
+    Category:"NeckBands",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untblueitled-1_600x.png?v=1661509030",
+    Name:"Rockerz 103 Pro",
+    Price:899,
+    MRP:2490,
+    Percent_off:"64% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earphones with 10 mm Drivers, Single Press Voice Assistant, Up To 20 hrs Uninterrupted, ENx™ Technology",
+    Category:"NeckBands",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/35ca6350-d6f3-4bc2-a742-01b2c88d80c4_800x.png?v=1673005509",
+    Name:"Rockerz 255 Pro+",
+    Price:1299,
+    MRP:3990,
+    Percent_off:"67% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Bluetooth Earphone with 10mm drivers, Up to 40H Nonstop Playback, Type-C charging, ASAP Charge",
+    Category:"NeckBands",
+    Status:"In-Stock",
+},
+//Wireless Headphones
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627",
+    Name:"Rockerz 518",
+    Price:1299,
+    MRP:3990,
+    Percent_off:"67% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Headphone with Dynamic 50mm Driver, Up To 20 Hours Of Playtime, Easy Control and Lightweight",
+    Category:"Wireless-HeadPhones",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c9b304e6-1451-4ac7-95a1-5aa1cf51df05_45954dbd-6b69-4ae5-bed5-27cb1780d391_300x.png?v=1629538797",
+    Name:"Rockerz 558",
+    Price:1999,
+    MRP:2999,
+    Percent_off:"60% off",
+    Rating:5.0,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"boAt Rockerz 558",
+    Category:"Wireless-HeadPhones",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/06bd8915-8db7-4575-9558-c97bf050d8d7_600x.png?v=1625044994",
+    Name:"Rockerz 400",
+    Price:1499,
+    MRP:2990,
+    Percent_off:"50% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Bluetooth Headphone with 40mm Dyanmic Drivers, 8 Hours Non-Stop Playback, Lightweight & Portable",
+    Category:"Wireless-HeadPhones",
+    Status:"In-Stock",
+},
+//Wireless Speakers
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_250_black_600x.png?v=1673001721",
+    Name:"Stone 250",
+    Price:1499,
+    MRP:3990,
+    Percent_off:"62% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"5W Portable Wireless Speaker with RGB LED, 9 Hours of Playtime, IPX7 Water Resistant",
+    Category:"Wireless-Speakers",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3_6f20b409-43b2-43d5-96ac-e9f8a26d79a8_600x.png?v=1658436783",
+    Name:"Stone 1000v2",
+    Price:3499,
+    MRP:6990,
+    Percent_off:"50% off",
+    Rating:5.0,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"14W Powerful Stereo Sound, Up to 8hrs Nonstop Playback, Travel & Party Booster, 3000mah Battery",
+    Category:"Wireless-Speakers",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/74a6b20d-9842-49da-b279-022812b81e1f_600x.png?v=1673001663",
+    Name:"Stone 350",
+    Price:1699,
+    MRP:3490,
+    Percent_off:"51% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Speaker with 10W Stereo Sound, 12H Nonstop Playtime, Lightweight Design, BT, TF Card & AUX Compatible",
+    Category:"Wireless-Speakers",
+    Status:"In-Stock",
+},
+//Smart Watch-2
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/WaveCall.197_d6cce9fa-8242-443a-b1e1-0fefdd1751c8_300x.png?v=1678190676",
+    Name:"TRebel Wave Call",
+    Price:1799,
+    MRP:7990,
+    Percent_off:"77% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"TRebel Wave Call",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_f30681d9-fddb-4997-bfcb-503fcc258a5c_600x.png?v=1646392933",
+    Name:"Matrix",
+    Price:1799,
+    MRP:11990,
+    Percent_off:"85% off",
+    Rating:4.6,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"1.65 (4.18 cm) colour AMOLED Display, Fitness Tracking, 100+ Cloud Watch Faces",
+    Category:"Smart Watch",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Wavebeatcall1.2_700x.png?v=1674561165",
+    Name:"Wave Beat Call",
+    Price:1799,
+    MRP:7990,
+    Percent_off:"79% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Bluetooth Calling Smart Watch with 1.69 (4.29 cm) HD Display, 600+ Cloud Watch faces, Live",
+    Category:"Smart Watch",
+    Status:"Out-Stock",
+},
+//Airpods-2
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_grey_8202f335-95e8-4bc4-9889-ea9beb8292e4_300x.png?v=1664103052",
+    Name:"Airdopes 183 ",
+    Price:1599,
+    MRP:2990,
+    Percent_off:"47% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Bluetooth Earbuds with 10mm Driver, Upto 90 min Playback in 10 min Charge, ASAP Charge Technology, BEAST™ mode",
+    Category:"Wireless-Earbuds",
+    Status:"Out-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-pink_600x.png?v=1678773275",
+    Name:"Airdopes 121 v2",
+    Price:1199,
+    MRP:2999,
+    Percent_off:"60% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"In-Ear Earbuds v2 with 8mm driver, LED Case Battery Indicator, 380mAh Pocket Friendly Charging",
+    Category:"Wireless-Earbuds",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_c5f9fe7c-c012-4d93-ba0c-b25267c0560d_300x.png?v=1647426797",
+    Name:"Airdopes 411 ANC",
+    Price:1999,
+    MRP:4990,
+    Percent_off:"60% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Noise-Cancelling Earbuds with 10mm Drivers, ASAPTM Charge Technology, Up to 25dB ANC, ENx™ Technology, 17.5 Hours Playback",
+    Category:"Wireless-Earbuds",
+    Status:"In-Stock",
+},
+//Neckbands-2
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_e0d541c5-72de-4f54-a19b-1c324082742a_600x.png?v=1654195093",
+    Name:"Rockerz 260",
+    Price:1299,
+    MRP:2499,
+    Percent_off:"48% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Bluetooth Earphone with Insta Wake & Pair, Quad Mics with ENx Technology & Asap Charge",
+    Category:"NeckBands",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245pro3_700x.png?v=1663584969",
+    Name:"Rockerz 103 Pro",
+    Price:899,
+    MRP:2490,
+    Percent_off:"64% off",
+    Rating:4.9,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earphones with 10 mm Drivers, Single Press Voice Assistant, Up To 20 hrs Uninterrupted, ENx™ Technology",
+    Category:"NeckBands",
+    Status:"In-Stock",
+},
+{
+    Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245pro4_700x.png?v=1663584969",
+    Name:"Rockerz 245 Pro",
+    Price:1299,
+    MRP:2499,
+    Percent_off:"48% off",
+    Rating:4.8,
+    Discount:"15 Extra Discount on UPI",
+    Discription:"Wireless Earphones with 10 min ASAP™ Fast Charge, 20 Hours of nonstop playback & ENx™ Technology",
+    Category:"NeckBands",
+    Status:"Out-Stock",
+},
+]
+ 
+
+var p1000 = productlistval.filter(function(elem){
+ return elem.Price<=1000;
+})
+var p1500 = productlistval.filter(function(elem){
+ return elem.Price<=1500;
+})
+var p3000  = productlistval.filter(function(elem){
+ return elem.Price<=3000;
+})
+function show749(){
+    document.getElementById("offerhub").textContent="";
+    p1000.map(function(elem,index){
+        var div = document.createElement("div");
+        div.setAttribute("class","child");
+
+        var div1=document.createElement("div");
+        div1.setAttribute("class","image");
+
+        var image = document.createElement("img");
+        image.setAttribute("src",elem.Image);
+        image.setAttribute("alt",elem.Name);
+
+        div1.append(image);
+
+        var div2 = document.createElement("div");
+        div2.setAttribute("class","details");
+
+        var anch1 = document.createElement("a");
+        anch1.setAttribute("href","hello.html");
+        anch1.setAttribute("class","product_name");
+        anch1.textContent = elem.Name;
+        anch1.addEventListener("click",function(){
+            details(elem);
+        });
+
+        var div3 = document.createElement("div");
+        div3.setAttribute("class","price_details")
+
+        var h42 = document.createElement("h4");
+        h42.setAttribute("class","price");
+        h42.textContent = elem.Price;
+
+        var h43 = document.createElement("h4");
+        h43.setAttribute("class","percentoff");
+        h43.textContent = elem.Percent_off;
+
+        var h44 = document.createElement("h4");
+        h44.textContent = elem.MRP;
+        
+        div3.append(h42,h43,h44);
+
+        var div4 = document.createElement("div");
+        div4.setAttribute("class","reviews");
+
+        var p1 = document.createElement("p");
+        p1.setAttribute("class","product_rating");
+        p1.textContent = elem.Rating;
+
+        div4.append(p1);
+
+        var p2 = document.createElement("p");
+        p2.textContent = elem.Discount;
+
+        var btn;
+        
+        if(elem.Status === "In-Stock"){
+            btn = document.createElement("button");
+            btn.setAttribute("class","acbtn");
+            btn.textContent = "ADD TO CART";
+            btn.addEventListener("click",function(){
+            addtocart(elem);
+           })
+        }
+        else{
+            btn = document.createElement("div");
+            btn.setAttribute("class","nmdiv");
+            var nmbtn = document.createElement("a");
+            nmbtn.setAttribute("href","hello.html");
+            nmbtn.setAttribute("class","nmanchor");
+            nmbtn.textContent = "NOTIFY ME";
+            nmbtn.addEventListener("click",function(){
+                notifyme(elem);
+            })
+            btn.append(nmbtn);
+        }
+
+        div2.append(anch1,div3,div4,p2,btn);
+        div.append(div1,div2);
+        document.querySelector("#offerhub").append(div);
+
+    })
+
+
+    
+    
+
+
+}
+function show999(){
+    document.getElementById("offerhub").textContent="";
+    p1500.map(function(elem,index){
+        var div = document.createElement("div");
+        div.setAttribute("class","child");
+
+        var div1=document.createElement("div");
+        div1.setAttribute("class","image");
+
+        var image = document.createElement("img");
+        image.setAttribute("src",elem.Image);
+        image.setAttribute("alt",elem.Name);
+
+        div1.append(image);
+
+        var div2 = document.createElement("div");
+        div2.setAttribute("class","details");
+
+        var anch1 = document.createElement("a");
+        anch1.setAttribute("href","hello.html");
+        anch1.setAttribute("class","product_name");
+        anch1.textContent = elem.Name;
+        anch1.addEventListener("click",function(){
+            details(elem);
+        });
+
+        var div3 = document.createElement("div");
+        div3.setAttribute("class","price_details")
+
+        var h42 = document.createElement("h4");
+        h42.setAttribute("class","price");
+        h42.textContent = elem.Price;
+
+        var h43 = document.createElement("h4");
+        h43.setAttribute("class","percentoff");
+        h43.textContent = elem.Percent_off;
+
+        var h44 = document.createElement("h4");
+        h44.textContent = elem.MRP;
+        
+        div3.append(h42,h43,h44);
+
+        var div4 = document.createElement("div");
+        div4.setAttribute("class","reviews");
+
+        var p1 = document.createElement("p");
+        p1.setAttribute("class","product_rating");
+        p1.textContent = elem.Rating;
+
+        div4.append(p1);
+
+        var p2 = document.createElement("p");
+        p2.textContent = elem.Discount;
+
+        var btn;
+        
+        if(elem.Status === "In-Stock"){
+            btn = document.createElement("button");
+            btn.setAttribute("class","acbtn");
+            btn.textContent = "ADD TO CART";
+            btn.addEventListener("click",function(){
+            addtocart(elem);
+           })
+        }
+        else{
+            btn = document.createElement("div");
+            btn.setAttribute("class","nmdiv");
+            var nmbtn = document.createElement("a");
+            nmbtn.setAttribute("href","hello.html");
+            nmbtn.setAttribute("class","nmanchor");
+            nmbtn.textContent = "NOTIFY ME";
+            nmbtn.addEventListener("click",function(){
+                notifyme(elem);
+            })
+            btn.append(nmbtn);
+        }
+
+        div2.append(anch1,div3,div4,p2,btn);
+        div.append(div1,div2);
+        document.querySelector("#offerhub").append(div);
+
+    })
+
+
+
+}
+function show1249(){
+    document.getElementById("offerhub").textContent="";
+    p3000.map(function(elem,index){
+        var div = document.createElement("div");
+        div.setAttribute("class","child");
+
+        var div1=document.createElement("div");
+        div1.setAttribute("class","image");
+
+        var image = document.createElement("img");
+        image.setAttribute("src",elem.Image);
+        image.setAttribute("alt",elem.Name);
+
+        div1.append(image);
+
+        var div2 = document.createElement("div");
+        div2.setAttribute("class","details");
+
+        var anch1 = document.createElement("a");
+        anch1.setAttribute("href","hello.html");
+        anch1.setAttribute("class","product_name");
+        anch1.textContent = elem.Name;
+        anch1.addEventListener("click",function(){
+            details(elem);
+        });
+
+        var div3 = document.createElement("div");
+        div3.setAttribute("class","price_details")
+
+        var h42 = document.createElement("h4");
+        h42.setAttribute("class","price");
+        h42.textContent = elem.Price;
+
+        var h43 = document.createElement("h4");
+        h43.setAttribute("class","percentoff");
+        h43.textContent = elem.Percent_off;
+
+        var h44 = document.createElement("h4");
+        h44.textContent = elem.MRP;
+        
+        div3.append(h42,h43,h44);
+
+        var div4 = document.createElement("div");
+        div4.setAttribute("class","reviews");
+
+        var p1 = document.createElement("p");
+        p1.setAttribute("class","product_rating");
+        p1.textContent = elem.Rating;
+
+        div4.append(p1);
+
+        var p2 = document.createElement("p");
+        p2.textContent = elem.Discount;
+
+        var btn;
+        
+        if(elem.Status === "In-Stock"){
+            btn = document.createElement("button");
+            btn.setAttribute("class","acbtn");
+            btn.textContent = "ADD TO CART";
+            btn.addEventListener("click",function(){
+            addtocart(elem);
+           })
+        }
+        else{
+            btn = document.createElement("div");
+            btn.setAttribute("class","nmdiv");
+            var nmbtn = document.createElement("a");
+            nmbtn.setAttribute("href","hello.html");
+            nmbtn.setAttribute("class","nmanchor");
+            nmbtn.textContent = "NOTIFY ME";
+            nmbtn.addEventListener("click",function(){
+                notifyme(elem);
+            })
+            btn.append(nmbtn);
+        }
+
+        div2.append(anch1,div3,div4,p2,btn);
+        div.append(div1,div2);
+        document.querySelector("#offerhub").append(div);
+
+    })
+
+
+
+}
+var cartitems = JSON.parse(localStorage.getItem("cart_list")) || [];
+function addtocart(elem){
+    alert("Item added to cart");
+    cartitems.push(elem);
+    localStorage.setItem("cart_list",JSON.stringify(cartitems));
+}
+</script>
+</html>

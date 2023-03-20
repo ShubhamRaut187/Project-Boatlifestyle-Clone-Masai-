@@ -1,0 +1,156 @@
+
+#container{
+    margin-top: 100px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 80px;
+    /* border: 2px solid salmon; */
+    /* display: flex; */
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.main{
+   /* height: 300px; */
+    
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.main div {
+  width: 50%;
+  height: 100%;
+  border: 1px solid grey;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+#container .main .childs2{
+    border: none;
+    width: 70%;
+}
+.main div div{
+  border: none;
+}
+.childs1>img{
+    width: 100%;
+}
+.main div .pricedetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 33%;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.main div .reviewdetails {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 33%;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.main div .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 34%;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: #f7c20a;
+    border-radius: 15px;
+}
+.main div .button:hover{
+    background-color: orangered; 
+}
+.main div .button button:hover{
+    background-color: orangered; 
+}
+.main div .button img{
+    width: 20%;
+}
+.main div .button button{
+    font-size: x-large;
+    font-weight: bold;
+   padding: 15px 15px;
+   border: none;
+   background-color: #f7c20a;
+}
+.striked{
+    text-decoration: line-through;
+}
+.off{
+  color: green;
+  font-size: large;
+}
+/* img{
+    width: 100%;
+    height: 80%;
+} */
+
+
+ 
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+}
+#bcode{
+    
+    background-color: orangered;
+    padding: 18px 18px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    border-radius: 18px;
+}
+/* #pcode{
+    font-size: xx-larger;
+} */
+#nav{
+/* box-sizing: border-box; */
+display: flex;
+justify-content: space-around;
+/* border: 2px solid red ; */
+height: 100px;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color: white;
+}
+#nav>.first{
+display: flex;
+/* border: 2px solid black; */
+
+}
+#boathome{
+height: 50px;
+}
+#links{
+display: flex;
+justify-content: space-around;
+/* border: 2px solid brown; */
+font-size: 20px;
+width: 35%;
+
+
+}
+a{
+text-decoration: none;
+font-weight: bold;
+}
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+
+}
+
+.sticky + .content {
+padding-top: 60px;
+}

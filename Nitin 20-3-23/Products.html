@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat-Products</title>
+    <link rel="stylesheet" href="Products.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <div id="nav">
+    <div class="first" >
+            <img id="boathome" src="https://tse3.mm.bing.net/th?id=OIP.2pWluCnobYZhbRIuyIWtHAHaD4&pid=Api&P=0" alt="boat">
+    </div> 
+     <div id="links">
+        <a href="products.html">CATEGORIES</a>   
+        <a href="">DAILY DEALS</a>
+        <a href="gift.html">GIFT WITH BOAT</a>
+        <a href="">MORE</a>
+     </div>
+    <div class="logo">
+       
+            <input type="search" placeholder="Type to search" >
+            <a href="login.html" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" alt="login"></a>
+           <a href="Cart.html"><img src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" alt="cart"></a> 
+       
+    </div>
+
+  </div>
+   
+   <!-- Navbar -->
+    <div id="title">
+        <h1>Our Products</h1>
+    </div>
+    <div id="operations">
+        <select id="showfilters" onchange=filterproducts()>
+            <option value="">Show Filters</option>
+            <option value="">View All</option>
+            <option value="Smart Watch">Watch</option>
+            <option value="Wireless-Earbuds">Wireless-Earbuds</option>
+            <option value="NeckBands">NeckBands</option>
+            <option value="Wireless-HeadPhones">Wireless-HeadPhones</option>
+            <option value="Wireless-Speakers">Wireless-Speakers</option>
+            <option value="Out-Stock">Out-Stock</option>
+        </select>
+        <select id="showsort" onchange="sortproducts()">
+            <option value="">Sort by</option>
+            <option value="Ascending">Alphabetically A-Z</option>
+            <option value="Decending">Alphabetically Z-A</option>
+            <option value="hightolow">Price, High to Low</option>
+            <option value="lowtohigh">Price, Low to High</option>
+        </select>
+    </div>
+    <div id="parent">
+        <!-- <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Beige_large.png?v=1660370349" alt="pro1">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <div>
+                    <h4>
+                    <h4>
+                    <h4>
+                    <h4>        
+                </div>
+                <hr>
+                <div>
+                    <div>
+                    <p class="product_rating">4.6</p>
+                    </div>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-5_large.png?v=1660243800" alt="pro2">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <h3 class="price">2099</h3>
+                <hr>
+                <p class="product_rating">4.6</p>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/blue_58bd5e28-de95-4f31-909d-6bce484bdbd9_large.png?v=1660243800" alt="pro3">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <h3 class="price">2099</h3>
+                <hr>
+                <p class="product_rating">4.6</p>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div> -->
+    </div>
+    <div class="content content2">
+        <button id="backbtn"><a href="hometest.html" id="backanch">BACK</a></button>
+    </div>
+    <div class="content content2">
+        <div id="eleven">
+  
+          <div class="e1">
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5.png?v=1661838672"
+                  alt="boat">
+              <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+              <div class="e1a">
+                  <input type="email" placeholder="Email Address*">
+                  <a href="">SUBSCRIBE</a>
+              </div>
+          </div>
+    
+          <div id="twelve">
+              <div class="e2">
+                  <h3>SHOP</h3>
+                  <p>True Wireless Earbuds</p>
+                  <p>Wired Headphones</p>
+                  <p>Home Audio</p>
+                  <p>Smart Watches</p>
+                  <p>Misfit</p>
+                  <p>Earn ₹100</p>
+              </div>
+              <div class="e2">
+                  <p>Headphones Wireless</p>
+                  <p>Wireless Speakers</p>
+                  <p>Mobile Accessories</p>
+                  <p>TRebel</p>
+                  <p>Gift Card</p>
+              </div>
+              <div class="e2">
+                  <h3>HELP</h3>
+                  <p>Track Your Order</p>
+                  <p>Return Policy</p>
+                  <p>Bulk Orders</p>
+                  <p>Why Buy Direct</p>
+              </div>
+              <div class="e2">
+                  <p>Warranty & Support</p>
+                  <p>Service Centers</p>
+                  <p>FAQs</p>
+              </div>
+              <div class="e2">
+                  <h3>COMPANY</h3>
+                  <P>About boAt</P>
+                  <p>News</p>
+                  <p>Read Our Blog</p>
+                  <p>Careers</p>
+                  <p>Security</p>
+                  <p>Terms of Service</p>
+                  <p>Investor Relations</p>
+                  <p>Social Responsibility</p>
+                  <p>Warranty Policy</p>
+              </div>
+    
+          </div>
+      </div>
+    
+      <div id="thirteen">
+          <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/3661/3661391.png" alt="twitter">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" alt="instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="youtube">
+          <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin">
+      </div>
+    
+      <div id="fourteen">
+          <div class="ft1">
+                <div class="ft1a">
+                    <h3>Download the App</h3>
+                </div>
+                <div class="ft1b">
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play-store_new.png?v=1666071594"
+                      alt="gplay">
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store_new_96c42e79-8764-4292-885a-dc793dde4655.png?v=1666071566"
+                      alt="appstore">
+                </div> 
+              </div>
+              <div class="ft2">
+                  <div class="ft2a">
+                      <h3>We Accept</h3>
+                  </div>
+                  <div class="ft2b">
+                  <img src="https://tse1.mm.bing.net/th?id=OIP.ldAH6_MjHzgin3H1rs2-oQHaCs&pid=Api&P=0"
+                   alt="visa">
+                  <img src="https://tse3.mm.bing.net/th?id=OIP.ftMkGpAtKpyigKg7kPG1MAHaDC&pid=Api&P=0" 
+                   alt="rupay">
+                  <img src="https://tse4.mm.bing.net/th?id=OIP.eZvb56xjmEhYl5WUTFM4BwHaCO&pid=Api&P=0" 
+                   alt="upi">
+                   <img src="https://tse3.mm.bing.net/th?id=OIP.TxpnBvLsTzl9p-I1wmvfvQAAAA&pid=Api&P=0" 
+                   alt="phone pay">
+                   <img src="https://tse4.mm.bing.net/th?id=OIP.mpngLDcQgfaMJmR38b-BwgHaD4&pid=Api&P=0"
+                    alt="gpay">
+    
+              </div>
+          </div>    
+      </div>
+    
+      <div id="nineteen">
+          <p>© 2023 Imagine Marketing Limited. All Rights Reserved.</p>
+          <p><b>For queries contact us:</b> Manager, Imagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing,</p>
+          <p>Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India</p>
+      </div>
+    <!-- footer end --></div>
+    
+</body>
+</html>
+<script src="Products.js"></script>
