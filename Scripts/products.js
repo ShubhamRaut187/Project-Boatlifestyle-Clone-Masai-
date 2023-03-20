@@ -8,7 +8,7 @@ var productlistval = [{
     Discount:"15 Extra Discount on UPI",
     Discription:" 1.69(4.29 cm) Colour HD Display, 20+ Active Sport Modes, Heart Rate & SpO2 Monitor, 10 Day Battery Life",
     Category:"Smart Watch",
-    Status:"Out-Stock",
+    Status:"In-Stock",
 },
 {
     Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_blue_759e7ad4-18af-4407-9e8a-91c0058b1a74_300x.png?v=1648108782",
@@ -20,7 +20,7 @@ var productlistval = [{
     Discount:"15 Extra Discount on UPI",
     Discription:" 1.69(4.29 cm) Colour HD Display, 20+ Active Sport Modes, Heart Rate & SpO2 Monitor, 10 Day Battery Life",
     Category:"Smart Watch",
-    Status:"In-Stock",
+    Status:"Out-Stock",
 },
 {
     Image:"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/wave-call-3_300x.png?v=1658295343",
@@ -457,14 +457,14 @@ function displayproducts(list){
 
         var h42 = document.createElement("h4");
         h42.setAttribute("class","price");
-        h42.textContent = elem.Price;
+        h42.textContent = "₹"+elem.Price;
 
         var h43 = document.createElement("h4");
         h43.setAttribute("class","percentoff");
         h43.textContent = elem.Percent_off;
 
         var h44 = document.createElement("h4");
-        h44.textContent = elem.MRP;
+        h44.textContent = "₹"+elem.MRP;
         
         div3.append(h42,h43,h44);
 

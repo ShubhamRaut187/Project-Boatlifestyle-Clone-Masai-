@@ -1,6 +1,187 @@
 /* NavBar */
-
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 5px #ababab;
+    padding: 13px 50px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  nav > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav > div > img{
+    width: 85px;
+    cursor: pointer;
+  }
+  nav > div > div >img{
+    width: 22px;
+    cursor: pointer;
+  }
+  nav > div > div:first-of-type > *{
+    margin: 0px 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  nav > div > div:first-of-type{
+    margin-right:55px;
+  }
+  nav > div > div:first-of-type > span > a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  nav > div > div:last-of-type {
+    display: flex;
+    align-items: center;
+  }
+  nav > div > div:last-of-type > *{
+    margin: 0px 10px;
+  }
+  nav > div > div:last-of-type > input{
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 2em;
+    padding: 11px 55px;
+  }
+  #errspan {
+    margin-right: -40px;
+    z-index: 2;
+    color: rgb(135, 135, 135);
+  }
+  nav .fa-bars {
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+  }
+  .show2 {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: white;
+    right:10px;
+    top: 80px;
+    border: 3px solid lightgray;
+    padding: 10px;
+  }
+  .show2 p{
+    color: #FF0000;
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  .show2 a{
+    background-color: #FF0000;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 190px;
+    padding: 40px 30px 30px 30px;
+    margin-left: -40px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .show {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 20px 5px 20px;
+    margin-left: -230px;
+  }
+  
+  .show3{
+    display:block;
+  }
+  
+  .dropdown-content div{
+    padding: 3px 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor:pointer;
+  }
+  .dropdown-content div > p{
+    margin-top: 0px;
+    text-align: center;
+  }
+  .dropdown-content div > img{
+    width:100px;
+    margin:auto;
+  }
+  
+  nav > div > div:first-of-type span:hover .dropdown-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 20px 5px 20px;
+    margin-left: -230px;
+    margin-top: 20px;
+  }
+  
+  nav>div>div:first-of-type>span {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0px;
+  }
+  
+  
+  .dropdown-content2 a {
+  color: black;
+  font-weight: 400;
+  padding: 5px 0px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  nav>div>div:first-of-type>span:hover .dropdown-content2{display: block;}
+  
+  nav > div > div:first-of-type a {
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 1em;
+  }
+  
+  nav > div > div:first-of-type a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav > div > div:first-of-type a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
    /* Navbar */
+   /* Footer */
+   
+   /* Footer */
 #title{
     /* border: 2px solid black; */
     margin-top: 30px;
@@ -146,6 +327,7 @@ div > img{
 }
 button:hover{
     background-color: #ff0000;
+    color: white;
 }
 .nmbtn{
     width: 90%;
@@ -174,6 +356,7 @@ button:hover{
 }
 .nmdiv:hover{
     background-color: #ff0000;
+    
 }
 .nmanchor{
     color: black;
@@ -183,6 +366,9 @@ button:hover{
     width: 100%;
     text-align: center;
     text-decoration: none;
+}
+.nmanchor:hover{
+    color: white;
 }
 hr{
     width: 95%;

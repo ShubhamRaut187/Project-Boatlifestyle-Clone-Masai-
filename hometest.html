@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="products.html" id="viewall">View All</a><br>
     <a href="products.html" id="smartwatch">Smart Watches</a><br>
     <a href="products.html" id="airpods">Airpods</a><br>
     <a href="products.html" id="neckbands">NeckBands</a><br>
@@ -15,6 +16,7 @@
 </body>
 </html>
 <script>
+    document.querySelector("#viewall").addEventListener("click",gotoviewall)
     document.querySelector("#smartwatch").addEventListener("click",gotosmartwatch);
     document.querySelector("#airpods").addEventListener("click",gotoairpods);
     document.querySelector("#neckbands").addEventListener("click",gotoneckbands);
@@ -48,6 +50,12 @@
     function gotowirelessspeakers(){
         var selectedcategory = "Wireless-Speakers";
         localStorage.setItem("selected_category","Wireless-Speakers");
+    }
+
+    //ViewAll
+    function gotoviewall(){
+        var selectedcategory = "";
+        localStorage.setItem("selected_category","");
     }
     
 </script>
