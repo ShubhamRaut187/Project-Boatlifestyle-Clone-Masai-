@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat-Products</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <!-- nav bar html -->
+    <!-- <div class="nav"> -->
+       <!-- nav start  -->
+    <nav>
+        <div>
+            <i class="fa-solid fa-bars"></i>
+            <a href="home11.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935" alt="logo" onclick="showMain()"></a>
+            <div id="navmedia">
+                <span>
+                    <a href="home11.html" onclick="showDiv()" class="dropbtn">CATEGORIES</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_100x.png?v=1663752600" alt="">
+                            <a onclick="goToWL()" href="products.html">Airdopes True Wireless</a>
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_100x.png?v=1663752867" alt="">
+                            <a  onclick="goToWH()" href="products.html">Rockerz Wireless</a>
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/wave-call-Copy_dcaa5c5f-2574-4a71-ba0e-a77e7a82abfa_600x.png?v=1678190676" alt="">
+                           <a onclick="goToW()" href="products.html"> Smart Watches</a>
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_100x.png?v=1663753167" alt="">
+                            <a  onclick="goToBW()"href="products.html">Bassheads Wired</a> 
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_100x.png?v=1663753243" alt="">
+                             <a  onclick="goToSS()" href="products.html">Stone Speakers</a> 
+                        </div>
+                        <div onclick="goToAH()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_100x.png?v=1663753280" alt="">
+                            <p>Aavante Home Audio</p>
+                        </div>
+                        <div onclick="goToMA()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/bence-boros-253214-unsplash_100x.jpg?v=1675683444" alt="">
+                            <p>Mobile Accessories</p>
+                        </div>
+                        <div onclick="goToW()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_100x.png?v=1675683871" alt="">
+                            <p>Trebel for Women</p>
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_100x.png?v=1675683940" alt="">
+                            <a  onclick="goToLE()" href="products.html">Limited Edition</a> 
+                        </div>
+                        <div onclick="goToT()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_100x.png?v=1663753379" alt="">
+                            <p>Misfit Trimmers</p>
+                        </div>
+                        <div onclick="goToIG()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_100x.png?v=1663753419" alt="">
+                            <p>Immortal Gaming</p>
+                        </div>
+                    </div>
+                </span>
+                <a href="dailydeals3.html">DAILY DEALS</a>
+                <a href="Gift.html">GIFT WITH BOAT</a>
+                <span>
+                    <a href="#">MORE</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content2">
+                        <a href="advertise.html">Do What Floats Your boAt</a>
+                        <a href="blogs.html
+                        ">Blogs</a>
+                        <a href=" bulkorder.html">Corporate Orders</a>
+                        <a href="">Earn ₹100</a>
+                        <a href="">Careers</a>
+                        <a href="">Social Responsibility</a>
+                        <a href="">Meet the boAtheads</a>
+                      </div>
+                </span>
+            </div>
+            <div id="inputMedia">
+                <i class="fa-solid fa-magnifying-glass" id="errspan"></i>
+                <input type="text" placeholder="Search">
+                <a href="login.html" id="uppics"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="profile"></a>
+                <div class="show2">
+                    <p>Hi boAthead!</p>
+                    
+                </div>
+               <a href="cart.html" id="uppics"> <img class="toggle-btn" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Cart_7e68f099-c0bf-4966-a9ef-14d1a3af07ad.png?v=1673260730" alt="cart" id="open-panel"> </a>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end  -->
+       
+      <!-- </div> -->
+      <!-- nav bar end -->
+    <div id="title" class="content">
+        <h1>Our Products</h1>
+    </div>
+    <div id="operations" class="content">
+        <select id="showfilters" onchange=filterproducts()>
+            <option value="">Show Filters</option>
+            <option value="">View All</option>
+            <option value="Smart Watch">Watch</option>
+            <option value="Wireless-Earbuds">Wireless-Earbuds</option>
+            <option value="NeckBands">NeckBands</option>
+            <option value="Wireless-HeadPhones">Wireless-HeadPhones</option>
+            <option value="Wireless-Speakers">Wireless-Speakers</option>
+        </select>
+        <select id="showsort" onchange="sortproducts()">
+            <option value="">Sort by</option>
+            <option value="Ascending">Alphabetically A-Z</option>
+            <option value="Decending">Alphabetically Z-A</option>
+            <option value="hightolow">Price, High to Low</option>
+            <option value="lowtohigh">Price, Low to High</option>
+        </select>
+    </div>
+    <div id="parent">
+        <!-- <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Beige_large.png?v=1660370349" alt="pro1">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <div>
+                    <h4>
+                    <h4>
+                    <h4>
+                    <h4>        
+                </div>
+                <hr>
+                <div>
+                    <div>
+                    <p class="product_rating">4.6</p>
+                    </div>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-5_large.png?v=1660243800" alt="pro2">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <h3 class="price">2099</h3>
+                <hr>
+                <p class="product_rating">4.6</p>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image">
+                <img class="pic" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/blue_58bd5e28-de95-4f31-909d-6bce484bdbd9_large.png?v=1660243800" alt="pro3">
+            </div>
+            <div class="details">
+                <h3 class="product_name">Wave Select Smartwatch</h3>
+                <h3 class="price">2099</h3>
+                <hr>
+                <p class="product_rating">4.6</p>
+                <p>15 Extra Discount</p>
+                <button>Add to Cart</button>
+            </div>
+        </div> -->
+    </div>
+    <div>
+        <button id="backbtn"><a href="home11.html" id="backanch">BACK</a></button>
+    </div>
+</body>
+</html>
+<script src="products.js"></script>

@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
-    <link rel="stylesheet" href="product1.css">
-    
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+  
 </head>
 <body>
-    <!-- nav start  -->
     <nav>
         <div>
             <i class="fa-solid fa-bars"></i>
-           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935" alt="logo" onclick="showMain()">
+            <a href="home11.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935" alt="logo" onclick="showMain()"></a>
             <div>
                 <span>
-                    <a href="#" onclick="showDiv()" class="dropbtn">CATEGORIES</a>
+                    <a href="home11.html" onclick="showDiv()" class="dropbtn">CATEGORIES</a>
                     <i class="fa-solid fa-chevron-down"></i>
                     <div id="myDropdown" class="dropdown-content">
                         <div >
@@ -94,98 +93,30 @@
             </div>
         </div>
     </nav>
-      <!-- nav end  -->
-    <div class="container">
-        <div class="innerc">
-            <div class="prodDiv">
-                <div class="allimages">
-             <div class="smallphoto">
-                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_600x.png?v=1668756103" onclick="choose(this)">
-                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/FeatureImagesAD1314XCharge_700x.jpg?v=1674156020" onclick="choose(this)">
-                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ad131FIAD131TypeC_700x.jpg?v=1674156020" onclick="choose(this)">
-                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/FeatureImagesAD131VA_700x.jpg?v=1674156020" onclick="choose(this)">
-                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/FeatureImagesAD131BV5.0_700x.jpg?v=1674156020" onclick="choose(this)">
+    <div id="main">
+        <div>
+            <p>Enter Your Name</p>
+            <input type="text" id="name" placeholder="Enter your name">
+            <p>Enter Your Address</p>
+            <input type="text" id="add" placeholder="Enter your address">
+            <p>Enter Your Mobile number</p>
+            <input type="number" id="mnum" placeholder="Enter your mobile number">
+            <div>
+                <button onclick="tellOTP()">Get OTP</button>
+                <input type="number" id="OTP">
             </div>
-            <div class="mainImage">
-                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ad131FIAD131TypeC_700x.jpg?v=1674156020" id="imagebox">
-            </div>
-            </div>
+        </div>
+        <div>     <p>Enter Your Credit Card Number</p>
+            <input maxlength="3" type="number" id="credit" placeholder="Credit Card Num">
+            <p>Security Code</p>
+            <input type="number" id="cvv" placeholder="Enter CVV">
+            <p>Do you have any discount coupons?</p>
+            <input type="text" id="dcode" placeholder="Discount Coupon">
+            <button  onclick="check()">
+               </a> Purchase</button> -->
+               <div id="otp"></div>
         </div>
 
-            <!-- 2nd -->
-            <div class="textBox">
-             
-                
-            </div>
-        </div>
-    </div>
-    <div class="formality">
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-1b_6c0c5f7d-a48c-40f5-946d-ea50fb1a9b82_small.png?v=1661243559" id="wlogo" >
-           <p> 1 Year
-            Warranty</p>
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-3b_b82496cc-51ed-47ad-b27a-a195b646bea1_small.png?v=1661244593">
-           <p> 7 Days
-            Replacement</p>
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-2b_dc921406-33cc-4867-846b-293610d69a41_small.png?v=1661244611">
-           <p> Free
-            Shipping</p>
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-4b_1d19c7fb-8da7-407e-8612-946e106cc508_small.png?v=1661244611">
-           <p> Secure
-            Checkout</p>
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-black-v1_small.png?v=1661245767">
-           <p> GST
-            Billing</p>
-    </div>
-    <div class="descNav">
-        <h3>Dsecription</h3>
-        <h3>Specification</h3>
-        <h3>Review</h3>
-    </div>
-    <div class="underdescNav">
-        <h1>boAt Airdopes 131 - Wireless Earbuds</h1>
-        <p>Sleek. Comfortable. Stylish. And a Splash of Incredible Colours. Bring alive your favourite sounds with these true wireless earbuds Equipped with 13mm drivers for the magical boAt signature sound. Designed for supreme ease with Insta Wake N’ Pair technology that auto connects the moment it’s out of the case and Type C Charging. Tws earbuds to drown all the sounds you don’t need and live every moment. With a battery capacity of 40mAh for each earbud, indulge in a blissful audio experience for up to 3 hours in a go. Tap into instant wireless functionality with optimum Bluetooth V5.0</p>
-    </div>
-    <div class="Div1">
-        <div>
-            <h2>Connected every moment</h2>
-        <p>Never lose a second with seamless Bluetooth 5.0 and Insta’ Wake n Pair, that connects your phone to your earbuds the moment they leave the charging case. Charge your tws bluetooth earphones with Type C for great speed.</p>
-        </div>
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Banner2-product2_2f6bbbb9-a887-481b-b597-72cd0f94821c.png?v=1622018201">
-        </div>
-    </div>
-    <div  class="descImage1">
-        <div  class="imageside">
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Banner3-product2_7d453894-034a-41ee-a8b4-24ecccccb8e8.png?v=1622018201">
-        </div>
-        <div>
-            <h1>Stay Connected With The Ones Who Matter</h1>
-            Stay connected always. Keep in touch with your near and dear ones with Bluetooth calling on the go and a responsive dialpad that allows you to save and call 10 contacts right from your smartwatch!</p>
-        </div>
-<p>    </div>
-    <!-- 3rd div -->
-    <div class="Div3">
-        <div>
-            <h2>
-                Track Your Health
-            </h2><p>
-Never miss a step with boAt Wave Call. Relax and unwind with Guided Breathing and Ultimate Mindfulness. With an elegant metal body and feather-light weight, wear it all day and track your health with real-time heart rate tracking, accurate SpO2 monitoring and more! Track your fitness journey with multiple active modes, daily calorie count, step count & distance covered, as your sync it with Google Fit and Apple Health.
-        </p>
-    </div>
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Banner4-Model2_c4ed8bac-e9d5-4f9f-970b-52fce898c52e.png?v=1622018200"></div>
-    </div>
-    <div class="Div4">
-        <div id="rahuldiv">
-           <h2>Upto 60 hours playback time</h2>
-           <p>Experience nonstop playback with 3 hours of sound per charge and overall 60 hours of playback time. Bluetooth earbuds with mic that come with a 650mAh Carry cum Charging case giving up to 4 times the charge.</p>
-           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Banner5-product1_6ef02625-b2a0-4671-aebc-414db2681077.png?v=1622018201" id="rahul">
-        </div>
-        <div id="splashImg">
-         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Banner5-product1_6ef02625-b2a0-4671-aebc-414db2681077.png?v=1622018201">
-        <h2>It Takes It All</h2>
-        <p>Never lose a second with seamless Bluetooth 5.0 and Insta’ Wake n Pair, that connects your phone to your earbuds the moment they leave the charging case. Charge your tws bluetooth earphones with Type C for great speed.</p>
-        </div>
     </div>
     <div class="content">
         <div id="eleven">
@@ -195,7 +126,7 @@ Never miss a step with boAt Wave Call. Relax and unwind with Guided Breathing an
                   alt="boat">
               <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
               <div class="e1a">
-                  <input type="email" placeholder="Email Address">
+                  <input type="email" placeholder="Email Address*">
                   <a href="">SUBSCRIBE</a>
               </div>
           </div>
@@ -290,7 +221,66 @@ Never miss a step with boAt Wave Call. Relax and unwind with Guided Breathing an
           <p><b>For queries contact us:</b> Manager, Imagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing,</p>
           <p>Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India</p>
       </div>
-   
+    <!-- footer end --></div>
 </body>
 </html>
-<script src="product1.js"></script>
+<script src="https://kit.fontawesome.com/4d1e521af4.js" crossorigin="anonymous"></script>
+<script>
+    function showMain(){
+        window.location.href = "index.html";
+    }
+    function check(){
+        var name = document.getElementById("name").value
+        var add = document.getElementById("add").value
+        var mnum = document.getElementById("mnum").value
+        var otp = document.getElementById("OTP").value
+        var ccn = document.getElementById("credit").value
+        var cvv = document.getElementById("cvv").value
+        var dcode = document.getElementById("dcode").value
+
+        if(name==""||add==""||mnum==""||otp==""||ccn==""||cvv==""){
+            alert("Please enter correct details")
+        }else if(otp!="1234"){
+            alert("wrong OTP")
+        }else{
+            alert("Thank you for the purchase :)")
+            // var anc = document.createElement("a")
+           
+    document.getElementById("main").textContent="thankyou"
+    window.open("paymentsucc.html")
+        }
+        
+    }
+
+    function tellOTP(){
+        alert("The OTP is 1234")
+    }
+    
+      //  nav scrpit start 
+      function goToWL(){
+        var selectedcategory = "Wireless-Earbuds";
+           localStorage.setItem("selected_category","Wireless-Earbuds");
+       }
+       function goToWH(){
+           var selectedcategory = "Wireless-HeadPhones";
+           localStorage.setItem("selected_category","Wireless-HeadPhones");
+       }
+       function goToW(){
+           var selectedcategory = "Smart Watch";
+           localStorage.setItem("selected_category","Smart Watch");
+       }
+       function goToBW(){
+           var selectedcategory = "NeckBands";
+           localStorage.setItem("selected_category","NeckBands");
+       }
+       function goToSS(){
+           var selectedcategory = "Wireless-Speakers";
+           localStorage.setItem("selected_category","Wireless-Speakers");
+       }
+       function goToLE(){
+           var selectedcategory = "Wireless-HeadPhones";
+           localStorage.setItem("selected_category","Wireless-HeadPhones");
+       }
+
+      //  nav script end
+</script>

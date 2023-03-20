@@ -90,7 +90,7 @@ let productArray=JSON.parse(localStorage.getItem("product_details"))|| []
             let picSelect=document.getElementById("imagebox");
             picSelect.src=smallphoto.src;
         }
- var pD=[]
+ var pD=JSON.parse(localStorage.getItem("cart_list"))|| []
         function addToCart(elem,ind){
             pD.push(elem);
             localStorage.setItem("cart_list",JSON.stringify(pD));
