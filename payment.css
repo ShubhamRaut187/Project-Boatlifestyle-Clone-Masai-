@@ -1,0 +1,383 @@
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 5px #ababab;
+    padding: 13px 50px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  nav > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav > div > img{
+    width: 85px;
+    cursor: pointer;
+  }
+  nav > div > div >img{
+    width: 22px;
+    cursor: pointer;
+  }
+  nav > div > div:first-of-type > *{
+    margin: 0px 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  nav > div > div:first-of-type{
+    margin-right:55px;
+  }
+  nav > div > div:first-of-type > span > a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  nav > div > div:last-of-type {
+    display: flex;
+    align-items: center;
+  }
+  nav > div > div:last-of-type > *{
+    margin: 0px 10px;
+  }
+  nav > div > div:last-of-type > input{
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 2em;
+    padding: 11px 55px;
+  }
+  #errspan {
+    margin-right: -40px;
+    z-index: 2;
+    color: rgb(135, 135, 135);
+  }
+  nav .fa-bars {
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+  }
+  .show2 {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: white;
+    right:10px;
+    top: 80px;
+    border: 3px solid lightgray;
+    padding: 10px;
+  }
+  .show2 p{
+    color: #FF0000;
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  .show2 a{
+    background-color: #FF0000;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 190px;
+    padding: 40px 30px 30px 30px;
+    margin-left: -40px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .show {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 20px 5px 20px;
+    margin-left: -230px;
+  }
+  
+  .show3{
+    display:block;
+  }
+  
+  .dropdown-content div{
+    padding: 3px 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor:pointer;
+  }
+  .dropdown-content div > p{
+    margin-top: 0px;
+    text-align: center;
+  }
+  .dropdown-content div > img{
+    width:100px;
+    margin:auto;
+  }
+  
+  nav > div > div:first-of-type span:hover .dropdown-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 20px 5px 20px;
+    margin-left: -230px;
+    margin-top: 20px;
+  }
+  
+  nav>div>div:first-of-type>span {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0px;
+  }
+  #uppics>img{
+    width: 40%;
+  }
+  
+  .dropdown-content2 a {
+  color: black;
+  font-weight: 400;
+  padding: 5px 0px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  nav>div>div:first-of-type>span:hover .dropdown-content2{display: block;}
+  
+  nav > div > div:first-of-type a {
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 1em;
+  }
+  
+  nav > div > div:first-of-type a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav > div > div:first-of-type a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  /* nav end  */
+  body{
+    /* background-color: grey; */
+      /* background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_01_95d6b90e-ab41-402c-bc3d-dfd5545d98a4.jpg?v=1639989127"); */
+      /* background-image: ; */
+  margin: 0px;
+  font-family: Lato;
+}
+
+#main {
+  display: grid;
+          width: 40%;
+          /* height: 1000px; */
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          padding: 20px;
+          background-color: rgba(255,255,255,0.8);
+          border-radius: 10px;
+          box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+      }
+#main > div{
+  
+      width: 80%;
+      /* height: 400px; */
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+  #main p {
+          font-weight: 400;
+          font-size: 18px;
+          margin: 0px;
+          line-height: 22px;
+          margin-top: 20px;
+          margin-bottom: 5px;
+          color: #5c5c5c;
+      }
+  #main button{
+      margin: 20px;
+  }
+  #main input {
+          border-radius: 15px;
+          border: none;
+          background-color: #f3f2ff;
+          padding: 10px 20px;
+          font-size: 16px;
+          margin-bottom: 20px;
+          box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+      }
+      #main button {
+          border: 0;
+          background-color: #FF0000;
+          padding: 10px 20px;
+          color: white;
+          border-radius: 5px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+      }
+      #main button:hover {
+          background-color: #800000;
+      }
+      #main > button:first-of-type{ 
+          width: 150px;
+          margin: 5px;
+          background-color: #5c5c5c;
+          color: white;
+          font-weight: 600;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+      } 
+ /* foooter  */
+ #eleven{
+    display: flex;
+    padding-left: px;
+    padding-right: 5px;
+  }
+  #eleven>div>img{
+    width: 32%;
+    height: 15%;    
+    padding: 5px;
+  }
+  .e1a{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+    /* padding: 10px; */
+    border: 1px solid red;
+    padding: 10px 10px 10px 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+  }
+  .e1a>a{
+    background-color: red;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  .e1a>input{
+    border: none;
+    padding: 5px;
+  
+  }
+  #twelve{
+    display: flex;
+    justify-content: space-evenly;
+   padding-left: 30px;
+   padding-right: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* color: gray; */
+    gap: 30px;
+    margin: auto;
+    
+  }
+  .e2{
+    padding: 10px;
+    border-right: 1px solid gray;
+  }
+  .e2>h2{
+    color: black;
+  }
+  .e2>p{
+    color: gray;
+    line-height: 30px;
+  }
+  .e2:last-child{
+    border: none;
+  }
+  #thirteen{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 30px;
+    /* border: 1px solid black; */
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  #thirteen>img{
+    width: 3%;
+    margin-left: 5px;
+    padding-left: 25px;
+  }
+  #fourteen{
+    display: flex;
+     justify-content: space-between;
+     /* border: 1px solid black; */
+     border-bottom: 1px solid gray;
+  }
+  .ft1a{
+    /* border: 1px solid black; */
+    margin-left: 40px;
+  }
+  .ft1b{
+    width: 100%;
+    height: 55%;
+    /* border: 1px solid black; */
+    
+  }
+  .ft1b>img{
+    width: 20%;
+    padding-left: 40px;
+  }
+  .ft2a{
+    /* border: 1px solid black; */
+    margin-left: 15px;
+  }
+  .ft2b>img{
+    display: flex;
+    width: 20%;
+    height: 40px;
+    /* border: 1px solid black; */
+    margin: auto;
+    object-fit: cover;
+    padding: 10px;
+  }
+  .ft2b{
+    display: flex;
+    /* border: 1px solid black; */
+  }
+  #nineteen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+  }
+  #nineteen>p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }

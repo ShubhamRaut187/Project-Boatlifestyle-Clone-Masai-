@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product3.css">
+    
+</head>
+<body>
+    <!-- nav start  -->
+    <nav>
+        <div>
+            <i class="fa-solid fa-bars"></i>
+            <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935" alt="logo" onclick="showMain()"></a>
+            <div>
+                <span>
+                    <a href="#" onclick="showDiv()" class="dropbtn">CATEGORIES</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_100x.png?v=1663752600" alt="">
+                            <a onclick="goToWL()" href="products.html">Airdopes True Wireless</a>
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_100x.png?v=1663752867" alt="">
+                            <a  onclick="goToWH()" href="products.html">Rockerz Wireless</a>
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/wave-call-Copy_dcaa5c5f-2574-4a71-ba0e-a77e7a82abfa_600x.png?v=1678190676" alt="">
+                           <a onclick="goToW()" href="products.html"> Smart Watches</a>
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_100x.png?v=1663753167" alt="">
+                            <a  onclick="goToBW()"href="products.html">Bassheads Wired</a> 
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_100x.png?v=1663753243" alt="">
+                             <a  onclick="goToSS()" href="products.html">Stone Speakers</a> 
+                        </div>
+                        <div onclick="goToAH()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_100x.png?v=1663753280" alt="">
+                            <p>Aavante Home Audio</p>
+                        </div>
+                        <div onclick="goToMA()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/bence-boros-253214-unsplash_100x.jpg?v=1675683444" alt="">
+                            <p>Mobile Accessories</p>
+                        </div>
+                        <div onclick="goToW()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_100x.png?v=1675683871" alt="">
+                            <p>Trebel for Women</p>
+                        </div>
+                        <div >
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_100x.png?v=1675683940" alt="">
+                            <a  onclick="goToLE()" href="products.html">Limited Edition</a> 
+                        </div>
+                        <div onclick="goToT()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_100x.png?v=1663753379" alt="">
+                            <p>Misfit Trimmers</p>
+                        </div>
+                        <div onclick="goToIG()">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_100x.png?v=1663753419" alt="">
+                            <p>Immortal Gaming</p>
+                        </div>
+                    </div>
+                </span>
+                <a href="dailydeals3.html">DAILY DEALS</a>
+                <a href="Gift.html">GIFT WITH BOAT</a>
+                <span>
+                    <a href="#">MORE</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="dropdown-content2">
+                        <a href="advertise.html">Do What Floats Your boAt</a>
+                        <a href="blogs.html
+                        ">Blogs</a>
+                        <a href=" bulkorder.html">Corporate Orders</a>
+                        <a href="">Earn ₹100</a>
+                        <a href="">Careers</a>
+                        <a href="">Social Responsibility</a>
+                        <a href="">Meet the boAtheads</a>
+                      </div>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass" id="errspan"></i>
+                <input type="text" placeholder="Search">
+                <a href="login.html" id="uppics"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="profile"></a>
+                <div class="show2">
+                    <p>Hi boAthead!</p>
+                    
+                </div>
+               <a href="cart.html" id="uppics"> <img class="toggle-btn" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Cart_7e68f099-c0bf-4966-a9ef-14d1a3af07ad.png?v=1673260730" alt="cart" id="open-panel"> </a>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end  -->
+      </div>
+    <div class="container">
+        <div class="innerc">
+            <div class="prodDiv">
+                <div class="allimages">
+             <div class="smallphoto">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627" onclick="choose(this)">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bass_daa229c5-4d3e-4afd-abca-54243a07238a_700x.jpg?v=1667509001" onclick="choose(this)">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Control_bd4a0552-f8f7-411f-b642-06ff69fbe386_700x.jpg?v=1667509001" onclick="choose(this)">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Cushion-COmfort_09cc933f-2e93-4cc1-a41f-26b907e9c917_700x.jpg?v=1667509001" onclick="choose(this)">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Dual-Mode_ddc40b42-2e31-4e0d-8081-07301eb1ca4e_700x.jpg?v=1667509001" onclick="choose(this)">
+            </div>
+            <div class="mainImage">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Cushion-COmfort_09cc933f-2e93-4cc1-a41f-26b907e9c917_700x.jpg?v=1667509001" id="imagebox">
+            </div>
+            </div>
+        </div>
+        <div class="textBox">
+           
+          </div>
+        </div>
+  
+    </div>
+    <div class="formality">
+        
+        <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-1b_6c0c5f7d-a48c-40f5-946d-ea50fb1a9b82_small.png?v=1661243559" id="wlogo" >
+           <p> 1 Year
+            Warranty</p>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-3b_b82496cc-51ed-47ad-b27a-a195b646bea1_small.png?v=1661244593">
+           <p> 7 Days
+            Replacement</p></div>
+            <div> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-2b_dc921406-33cc-4867-846b-293610d69a41_small.png?v=1661244611">
+           <p> Free
+            Shipping</p></div>
+            <div> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-4b_1d19c7fb-8da7-407e-8612-946e106cc508_small.png?v=1661244611">
+           <p> Secure
+            Checkout</p></div>
+            <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-black-v1_small.png?v=1661245767">
+           <p> GST
+            Billing</p></div>
+    </div>
+    <div class="descNav">
+        <h3>Dsecription</h3>
+        <h3>Specification</h3>
+        <h3>Review</h3>
+    </div>
+    <div class="underdescNav">
+        <h1>boAt Rockerz 518 Wireless Headphone</h1>
+        <p>Now just stop worrying about Wires hanging from here and there. Pair with any Bluetooth device, connect and play. Dead Batteries can kill your vibe. boAt Rockerz 518 is designed to play Up to 20 hours. Don't just be loud, be loud and clear. We assure you have not heard such powerful bass and vocal clarity from a wireless comfortable headphone with Extra Comfort Ear cups. The boAt Super Bass Rockerz 518 Wireless Headphones will make your listening experience personal and for real. So, just plug it in and Plug into Nirvana.</p>
+    </div>
+    <div class="Div1">
+        <div>
+            <h2>THUMPING BASS</h2>
+        <p>boAt signature sonic high definition sound with super extra bass and balanced treble performance to make your listening experience a thumping one! With boAt custom-designed 50 mm drivers, giving you the performance you could never have imagined.</p>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/r510-2.png?v=1615237317">
+        </div>
+    </div>
+    <div  class="descImage1">
+        <div  class="imageside">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/r510-3.png?v=1615237318" id="descimageid">
+        </div>
+        <div>
+            <h1>Stay Connected With The Ones Who Matter</h1>
+            Now you can enjoy your favorite tunes all day thanks to the 400mAh Rechargeable Li-Polymer battery that delivers up to 20 hours of audio excellence. From music to movies, videos and so much more, it’s all in a day’s work for the Rockerz 518. What’s more, Plugin or unplugged, you’re always good to go with the Rockerz 518.</p>
+        </div>
+<p>    </div>
+   
+    <div class="Div3">
+        <div>
+            <h2>
+                Comfort-Fit
+            </h2><p>
+                The foam inside the ear pads adapts to your ears with just the right pressure ensuring great comfort and also delivering authentic sound.
+        </p>
+    </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/r510-4.png?v=1615237320"></div>
+    </div>
+    <div class="Div4">
+        <div id="rahuldiv">
+           <h2>Stay Active and Hydrated</h2>
+           <p>Stay active with boAt Wave Call as it sends you smart sedentary alerts and keeps notifying you to move. It also pushes you towards a modern lifestyle by sending alerts to stay hydrated.</p>
+           <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/r510-6.png?v=1615237315" id="rahul">
+        </div>
+        <div id="splashImg">
+         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/r510-2.png?v=1615237317">
+        <h2>It Takes It All</h2>
+        <p>Put it on at just 230 grams, boAt Rockerz 518 wireless bluetooth headphones is one of the lightest in its class, giving you optimal comfort and master control board to play/pause, change tracks and much more feature that feels you cool</p>
+        </div>
+    </div>
+    <!-- footer start  -->
+    <div class="content">
+        <div id="eleven">
+    
+          <div class="e1">
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5.png?v=1661838672"
+                  alt="boat">
+              <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+              <div class="e1a">
+                  <input type="email" placeholder="Email Address*">
+                  <a href="">SUBSCRIBE</a>
+              </div>
+          </div>
+    
+          <div id="twelve">
+              <div class="e2">
+                  <h3>SHOP</h3>
+                  <p>True Wireless Earbuds</p>
+                  <p>Wired Headphones</p>
+                  <p>Home Audio</p>
+                  <p>Smart Watches</p>
+                  <p>Misfit</p>
+                  <p>Earn ₹100</p>
+              </div>
+              <div class="e2">
+                  <p>Headphones Wireless</p>
+                  <p>Wireless Speakers</p>
+                  <p>Mobile Accessories</p>
+                  <p>TRebel</p>
+                  <p>Gift Card</p>
+              </div>
+              <div class="e2">
+                  <h3>HELP</h3>
+                  <p>Track Your Order</p>
+                  <p>Return Policy</p>
+                  <p>Bulk Orders</p>
+                  <p>Why Buy Direct</p>
+              </div>
+              <div class="e2">
+                  <p>Warranty & Support</p>
+                  <p>Service Centers</p>
+                  <p>FAQs</p>
+              </div>
+              <div class="e2">
+                  <h3>COMPANY</h3>
+                  <P>About boAt</P>
+                  <p>News</p>
+                  <p>Read Our Blog</p>
+                  <p>Careers</p>
+                  <p>Security</p>
+                  <p>Terms of Service</p>
+                  <p>Investor Relations</p>
+                  <p>Social Responsibility</p>
+                  <p>Warranty Policy</p>
+              </div>
+    
+          </div>
+      </div>
+    
+      <div id="thirteen">
+          <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/3661/3661391.png" alt="twitter">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" alt="instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="youtube">
+          <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin">
+      </div>
+    
+      <div id="fourteen">
+          <div class="ft1">
+                <div class="ft1a">
+                    <h3>Download the App</h3>
+                </div>
+                <div class="ft1b">
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play-store_new.png?v=1666071594"
+                      alt="gplay">
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store_new_96c42e79-8764-4292-885a-dc793dde4655.png?v=1666071566"
+                      alt="appstore">
+                </div> 
+              </div>
+              <div class="ft2">
+                  <div class="ft2a">
+                      <h3>We Accept</h3>
+                  </div>
+                  <div class="ft2b">
+                  <img src="https://tse1.mm.bing.net/th?id=OIP.ldAH6_MjHzgin3H1rs2-oQHaCs&pid=Api&P=0"
+                   alt="visa">
+                  <img src="https://tse3.mm.bing.net/th?id=OIP.ftMkGpAtKpyigKg7kPG1MAHaDC&pid=Api&P=0" 
+                   alt="rupay">
+                  <img src="https://tse4.mm.bing.net/th?id=OIP.eZvb56xjmEhYl5WUTFM4BwHaCO&pid=Api&P=0" 
+                   alt="upi">
+                   <img src="https://tse3.mm.bing.net/th?id=OIP.TxpnBvLsTzl9p-I1wmvfvQAAAA&pid=Api&P=0" 
+                   alt="phone pay">
+                   <img src="https://tse4.mm.bing.net/th?id=OIP.mpngLDcQgfaMJmR38b-BwgHaD4&pid=Api&P=0"
+                    alt="gpay">
+    
+              </div>
+          </div>    
+      </div>
+    
+      <div id="nineteen">
+          <p>© 2023 Imagine Marketing Limited. All Rights Reserved.</p>
+          <p><b>For queries contact us:</b> Manager, Imagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing,</p>
+          <p>Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India</p>
+      </div>
+    </div>
+    <!-- footer end -->
+</body>
+</html>
+<script src="product3.js"></script>
