@@ -213,7 +213,7 @@ border: 1px blue;
     height: 8vh;
     margin-bottom: 9px;
     cursor: pointer;
-    /* opacity: 0.4; */
+    opacity: 0.4;
 } 
 .smallphoto img:hover{
     opacity: 1;
