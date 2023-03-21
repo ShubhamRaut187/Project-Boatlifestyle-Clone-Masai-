@@ -494,7 +494,7 @@ function displayproducts(list){
             btn = document.createElement("div");
             btn.setAttribute("class","nmdiv");
             var nmbtn = document.createElement("a");
-            nmbtn.setAttribute("href","notifyme.html");
+            nmbtn.setAttribute("href","notify.html");
             nmbtn.setAttribute("class","nmanchor");
             nmbtn.textContent = "NOTIFY ME";
             nmbtn.addEventListener("click",function(){
@@ -527,6 +527,7 @@ function addtocart(elem){
 var notifyproduct = JSON.parse(localStorage.getItem("notify_list")) || []; 
 function  notifyme(elem){
     // alert("Notify Me");
+    console.log("yes")
     notifyproduct.push(elem);
     localStorage.setItem("notify_list",JSON.stringify(notifyproduct));
 }
